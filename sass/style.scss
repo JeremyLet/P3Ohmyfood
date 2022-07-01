@@ -1,0 +1,27 @@
+@import "./base/normalize";
+@import "./base/typography";
+@import "./pages/accueil";
+@import "./layout/header";
+@import "./layout/searchbar";
+@import "./layout/footer";
+@import "./components/buttons";
+@import "./components/cards";
+
+html {
+  max-width: 375px;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+@media all and (min-width: 375px) {
+  html {
+    max-width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

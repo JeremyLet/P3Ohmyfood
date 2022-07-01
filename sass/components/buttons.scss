@@ -1,0 +1,41 @@
+.form__result-button {
+  height: 50px;
+  width: 220px;
+  background: linear-gradient(to top, $first-color, $second-color);
+  border: 0px solid;
+  border-radius: 30px;
+  box-shadow: 0px 5px 2px $background-alt-4;
+  color: $font-color-1;
+}
+
+.filterbutton {
+  height: 75px;
+  width: 330px;
+  border: 0px solid;
+  box-shadow: 4px 4px 8px $background-alt-4;
+  border-radius: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  .filterbutton__circleicon {
+    font-size: $font-size-S;
+    position: relative;
+    right: 20px;
+    &--circleobject {
+      color: $first-color;
+    }
+    &--circlenumber {
+      font-family: $font-text;
+      font-weight: $font-weight-medium;
+      color: $font-color-1;
+    }
+  }
+  .filterbutton__icon {
+    padding: 0px 20px 0px 0px;
+    font-size: $font-size-L;
+  }
+  .filterbutton__text {
+    font-size: $font-size-M;
+    font-weight: $font-weight-big;
+  }
+}

@@ -1,0 +1,40 @@
+.card {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 20px;
+  box-shadow: 4px 4px 8px $background-alt-4;
+  border-radius: 15px;
+  .picturebloc {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+  }
+  .descriptionbloc {
+    background-color: $background-alt-1;
+    width: 100%;
+    height: 30%;
+    margin-top: -5px;
+    padding: 10px;
+    border-radius: 0px 0px 15px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .descriptionbloc__TxtPart {
+      &--Name {
+        margin: 0px;
+        padding-bottom: 5px;
+        color: $font-color-2;
+      }
+      &--Town {
+        margin: 0px;
+        color: $font-color-2;
+      }
+    }
+    .descriptionbloc__TxtPart--NormalHeart {
+      font-size: 24px;
+      color: $font-color-2;
+    }
+  }
+}
