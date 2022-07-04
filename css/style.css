@@ -322,21 +322,30 @@ a {
   color: #fff;
 }
 
-.form__first-slogan .filters__title .cards__title {
+.form__first-slogan,
+.filters__title,
+.cards__title {
   font-size: 24px;
+  font-weight: 800;
 }
 
 .form__second-slogan {
-  font-size: 22px;
-  font-weight: 200;
+  font-size: 18px;
+  font-weight: 400;
 }
 
-.form::placeholder .form__result-button .descriptionbloc__TxtPart--Name {
+.form::placeholder,
+.form__result-button {
   font-size: 16px;
 }
 
+.descriptionbloc__TxtPart--Name {
+  font-size: 18px;
+  font-weight: 800;
+}
+
 .descriptionbloc__TxtPart--Town {
-  font-weight: 200;
+  font-weight: 400;
 }
 
 .footer__title {
@@ -346,8 +355,8 @@ a {
 
 .form {
   width: 100%;
-  height: 350px;
-  background: linear-gradient(to top, #f6f6f6 0% 90%, #cfcfcf 90% 100%);
+  height: 337px;
+  background: linear-gradient(to top, #f6f6f6 0% 86%, #cfcfcf 86% 100%);
   border-top: 2px solid #cfcfcf;
 }
 
@@ -358,43 +367,48 @@ a {
 
 .filters {
   width: 100%;
-  height: 450px;
-  padding: 15px;
+  height: 440px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
 }
 
 .filters__title {
   margin: 0%;
   align-self: flex-start;
+  padding: 50px 0px 25px 15px;
 }
 
 .cards {
   background-color: #f6f6f6;
-  padding: 15px;
+  padding: 15px 15px 45px 15px;
 }
 
-/* Mon commentaire de test */
+.cards__title {
+  padding-top: 40px;
+  padding-bottom: 22px;
+  margin: 0px;
+}
+
 .header {
   width: 100%;
-  height: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .header__logo {
-  display: block;
-  margin: auto;
   width: 50%;
   height: 50%;
-  padding: 20px 0px;
 }
 
 .form {
   text-align: center;
 }
 .form__searchfield-icon {
-  padding-top: 5px;
+  padding-top: 15px;
 }
 .form__searchfield-text {
   background: #cfcfcf;
@@ -408,6 +422,17 @@ a {
   padding-left: 25px;
 }
 
+.form__resultspresentation {
+  padding-top: 55px;
+}
+.form__resultspresentation .form__first-slogan {
+  margin: 0px;
+}
+.form__resultspresentation .form__second-slogan {
+  margin: 0px;
+  padding: 12px 0px 30px 0px;
+}
+
 footer {
   background-color: #000;
   color: #fff;
@@ -416,6 +441,7 @@ footer {
 
 .footer__title {
   margin: 0px;
+  padding-top: 5px;
   padding-bottom: 10px;
 }
 
@@ -425,7 +451,7 @@ footer {
   margin: 0px;
 }
 .footer__list-subelement {
-  padding-top: 10px;
+  padding-top: 8px;
 }
 .footer__list-subelement--icon {
   font-size: 14px;
@@ -452,6 +478,7 @@ footer {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  margin-bottom: 25px;
 }
 .filterbutton .filterbutton__circleicon {
   font-size: 14px;
@@ -468,7 +495,7 @@ footer {
 }
 .filterbutton .filterbutton__icon {
   padding: 0px 20px 0px 0px;
-  font-size: 22px;
+  font-size: 18px;
 }
 .filterbutton .filterbutton__text {
   font-size: 16px;
@@ -480,7 +507,7 @@ footer {
   width: 100%;
   box-shadow: 4px 4px 8px #cfcfcf;
   border-radius: 15px;
-  object-fit: cover;
+  margin-bottom: 20px;
 }
 .card .card__button--new {
   display: none;
@@ -516,6 +543,9 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+.descriptionbloc .descriptionbloc__TxtPart {
+  padding-top: 5px;
 }
 .descriptionbloc .descriptionbloc__TxtPart--Name {
   margin: 0px;

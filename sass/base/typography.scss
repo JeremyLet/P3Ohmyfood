@@ -17,7 +17,7 @@ $background-alt-5: #eaeaea;
 $background-alt-6: #99e2d0;
 
 $font-size-XL: 24px; /* H1 */
-$font-size-L: 22px; /* H2 */
+$font-size-L: 18px; /* H2 */
 $font-size-M: 16px; /* Placeholder, txt buttons, txt cards */
 $font-size-S: 14px; /*New button */
 
@@ -35,21 +35,30 @@ a {
 	color: $font-color-1;
 }
 
-.form__first-slogan .filters__title .cards__title {
+.form__first-slogan,
+.filters__title,
+.cards__title {
 	font-size: $font-size-XL;
+	font-weight: $font-weight-big;
 }
 
 .form__second-slogan {
 	font-size: $font-size-L;
-	font-weight: $font-weight-light;
+	font-weight: $font-weight-medium;
 }
 
-.form::placeholder .form__result-button .descriptionbloc__TxtPart--Name {
+.form::placeholder,
+.form__result-button {
 	font-size: $font-size-M;
 }
 
+.descriptionbloc__TxtPart--Name {
+	font-size: $font-size-L;
+	font-weight: $font-weight-big;
+}
+
 .descriptionbloc__TxtPart--Town {
-	font-weight: $font-weight-light;
+	font-weight: $font-weight-medium;
 }
 
 .footer__title {

@@ -3,7 +3,7 @@
 	width: 100%;
 	box-shadow: 4px 4px 8px $background-alt-4;
 	border-radius: 15px;
-	object-fit: cover;
+	margin-bottom: 20px;
 	.card__button--new {
 		display: none;
 		background-color: $background-alt-6;
@@ -38,6 +38,7 @@
 	justify-content: space-between;
 	align-items: center;
 	.descriptionbloc__TxtPart {
+		padding-top: 5px;
 		&--Name {
 			margin: 0px;
 			padding-bottom: 5px;
