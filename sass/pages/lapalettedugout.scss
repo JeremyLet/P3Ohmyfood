@@ -1,0 +1,111 @@
+.titleImage {
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
+}
+
+.BlocMenu {
+	width: 100%;
+	padding: 15px;
+	background-color: $background-alt-3;
+	border-radius: 40px 40px 0px 0px;
+	position: relative;
+	top: -50px;
+	bottom: -50px;
+	padding: 20px 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	.BlocMenu__title {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0px 15px;
+		&--RestaurantName {
+			font-family: $font-logoTitres;
+			font-size: $font-size-XL;
+			font-weight: $font-weight-medium;
+		}
+		&--heartnormal {
+			font-size: $font-size-XL;
+		}
+	}
+}
+
+.BlocEntrees {
+	width: 100%;
+	height: 33%;
+	&__title {
+		font-size: $font-size-S;
+		text-transform: uppercase;
+		width: 40px;
+		border-bottom: 3px solid $third-color;
+		margin: 0px;
+		padding-bottom: 5px;
+	}
+}
+
+.BlocPlats {
+	width: 100%;
+	height: 33%;
+	&__title {
+		font-size: $font-size-S;
+		text-transform: uppercase;
+		width: 40px;
+		border-bottom: 3px solid $third-color;
+		margin: 0px;
+		padding-bottom: 5px;
+	}
+}
+
+.BlocDesserts {
+	width: 100%;
+	height: 33%;
+	&__title {
+		font-size: $font-size-S;
+		text-transform: uppercase;
+		width: 40px;
+		border-bottom: 3px solid $third-color;
+		margin: 0px;
+		padding-bottom: 5px;
+	}
+}
+
+.Menucard {
+	width: 100%;
+	height: 70px;
+	padding: 10px;
+	margin: 10px 0px;
+	background-color: $background-alt-1;
+	border-radius: 15px;
+	box-shadow: 4px 4px 4px $background-alt-4;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	align-content: center;
+	&__plat {
+		font-size: $font-size-L;
+		font-weight: $font-weight-large;
+		padding-top: 4px;
+		padding-bottom: 6px;
+	}
+	&__platdetails {
+		font-size: $font-size-S;
+	}
+	&__platprice {
+		font-size: $font-size-M;
+		font-weight: $font-weight-large;
+		margin-left: auto;
+		margin-top: -20px;
+	}
+}
+
+.form__result-button {
+	margin: 20px;
+}
+footer {
+	margin-top: -50px;
+}

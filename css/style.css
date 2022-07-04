@@ -313,6 +313,7 @@ template {
 /* H2 */
 /* Placeholder, txt buttons, txt cards */
 /*New button */
+/*Menus */
 body {
   font-family: "Roboto";
 }
@@ -390,7 +391,120 @@ a {
   margin: 0px;
 }
 
-.header {
+.titleImage {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.BlocMenu {
+  width: 100%;
+  padding: 15px;
+  background-color: #f6f6f6;
+  border-radius: 40px 40px 0px 0px;
+  position: relative;
+  top: -50px;
+  bottom: -50px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.BlocMenu .BlocMenu__title {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 15px;
+}
+.BlocMenu .BlocMenu__title--RestaurantName {
+  font-family: "Shrikhand";
+  font-size: 24px;
+  font-weight: 400;
+}
+.BlocMenu .BlocMenu__title--heartnormal {
+  font-size: 24px;
+}
+
+.BlocEntrees {
+  width: 100%;
+  height: 33%;
+}
+.BlocEntrees__title {
+  font-size: 14px;
+  text-transform: uppercase;
+  width: 40px;
+  border-bottom: 3px solid #99e2d0;
+  margin: 0px;
+  padding-bottom: 5px;
+}
+
+.BlocPlats {
+  width: 100%;
+  height: 33%;
+}
+.BlocPlats__title {
+  font-size: 14px;
+  text-transform: uppercase;
+  width: 40px;
+  border-bottom: 3px solid #99e2d0;
+  margin: 0px;
+  padding-bottom: 5px;
+}
+
+.BlocDesserts {
+  width: 100%;
+  height: 33%;
+}
+.BlocDesserts__title {
+  font-size: 14px;
+  text-transform: uppercase;
+  width: 40px;
+  border-bottom: 3px solid #99e2d0;
+  margin: 0px;
+  padding-bottom: 5px;
+}
+
+.Menucard {
+  width: 100%;
+  height: 70px;
+  padding: 10px;
+  margin: 10px 0px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 4px 4px 4px #cfcfcf;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-content: center;
+}
+.Menucard__plat {
+  font-size: 18px;
+  font-weight: 600;
+  padding-top: 4px;
+  padding-bottom: 6px;
+}
+.Menucard__platdetails {
+  font-size: 14px;
+}
+.Menucard__platprice {
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: auto;
+  margin-top: -20px;
+}
+
+.form__result-button {
+  margin: 20px;
+}
+
+footer {
+  margin-top: -50px;
+}
+
+.headerHome {
   width: 100%;
   height: 60px;
   display: flex;
@@ -398,10 +512,29 @@ a {
   justify-content: center;
   align-items: center;
 }
-
-.header__logo {
+.headerHome__logo {
   width: 50%;
   height: 50%;
+}
+
+.headerMenu {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.headerMenu__logo {
+  width: 50%;
+  height: 50%;
+}
+.headerMenu__link {
+  color: #000;
+}
+.headerMenu__arrow {
+  position: relative;
+  right: 50px;
 }
 
 .form {
