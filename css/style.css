@@ -356,13 +356,13 @@ a {
 .form {
   width: 100%;
   height: 337px;
-  background: linear-gradient(to top, #f6f6f6 0% 86%, #cfcfcf 86% 100%);
-  border-top: 2px solid #cfcfcf;
+  background: linear-gradient(to top, #f6f6f6 0% 86%, #eaeaea 86% 100%);
+  border-top: 2px solid #cecece;
 }
 
 ::placeholder {
-  background: #cfcfcf;
-  border: 0px solid #cfcfcf;
+  background: #eaeaea;
+  border: 0px solid #eaeaea;
 }
 
 .filters {
@@ -411,7 +411,7 @@ a {
   padding-top: 15px;
 }
 .form__searchfield-text {
-  background: #cfcfcf;
+  background: #eaeaea;
   border: 0px;
   padding-top: 10px;
 }

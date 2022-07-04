@@ -4,14 +4,14 @@
 	background: linear-gradient(
 		to top,
 		$background-alt-3 0% 86%,
-		$background-alt-4 86% 100%
+		$background-alt-5 86% 100%
 	);
-	border-top: 2px solid $background-alt-4;
+	border-top: 2px solid #cecece;
 }
 
 ::placeholder {
-	background: $background-alt-4;
-	border: 0px solid $background-alt-4;
+	background: $background-alt-5;
+	border: 0px solid $background-alt-5;
 }
 
 .filters {
