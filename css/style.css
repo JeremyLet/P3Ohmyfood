@@ -478,17 +478,34 @@ footer {
 .card {
   height: 250px;
   width: 100%;
-  margin-bottom: 20px;
   box-shadow: 4px 4px 8px #cfcfcf;
   border-radius: 15px;
+  object-fit: cover;
 }
-.card .picturebloc {
+.card .card__button--new {
+  display: none;
+  background-color: #99e2d0;
+  color: #008766;
+  font-size: 14px;
+  font-weight: 600;
+  border: 0px solid;
+  height: 30px;
+  width: 80px;
+  position: absolute;
+  right: 5%;
+  z-index: 9999;
+  margin: 10px;
+}
+
+.picturebloc {
   width: 100%;
   height: 70%;
   object-fit: cover;
   border-radius: 15px 15px 0px 0px;
+  z-index: -1;
 }
-.card .descriptionbloc {
+
+.descriptionbloc {
   background-color: #fff;
   width: 100%;
   height: 30%;
@@ -500,16 +517,16 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
-.card .descriptionbloc .descriptionbloc__TxtPart--Name {
+.descriptionbloc .descriptionbloc__TxtPart--Name {
   margin: 0px;
   padding-bottom: 5px;
   color: #000;
 }
-.card .descriptionbloc .descriptionbloc__TxtPart--Town {
+.descriptionbloc .descriptionbloc__TxtPart--Town {
   margin: 0px;
   color: #000;
 }
-.card .descriptionbloc .descriptionbloc__TxtPart--NormalHeart {
+.descriptionbloc .descriptionbloc__TxtPart--NormalHeart {
   font-size: 24px;
   color: #000;
 }
