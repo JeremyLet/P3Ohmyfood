@@ -1,29 +1,32 @@
-footer {
+.footer {
 	background-color: $background-alt-2;
 	color: $font-color-1;
 	padding: 20px 15px;
-	margin-top: 0px;
-}
-
-.footer__title {
-	margin: 0px;
-	padding-top: 5px;
-	padding-bottom: 10px;
-}
-
-.footer__list {
-	list-style-type: none;
-	padding: 0px;
-	margin: 0px;
-	&-subelement {
-		padding-top: 8px;
-		&--icon {
-			font-size: $font-size-S;
-			width: 30px;
-			padding-right: 15px;
-		}
+	&--home {
+		margin-top: 0px;
 	}
-	&--mail {
-		color: $font-color-1;
+	&--menus {
+		margin-top: -50px;
+	}
+	.footer__title {
+		margin: 0px;
+		padding-top: 5px;
+		padding-bottom: 10px;
+	}
+	.footer__list {
+		list-style-type: none;
+		padding: 0px;
+		margin: 0px;
+		&-subelement {
+			padding-top: 8px;
+			&--icon {
+				font-size: $font-size-S;
+				width: 30px;
+				padding-right: 15px;
+			}
+		}
+		&--mail {
+			color: $font-color-1;
+		}
 	}
 }
