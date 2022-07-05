@@ -1,6 +1,6 @@
 .titleImage {
 	width: 100%;
-	height: 250px;
+	height: 265px;
 	object-fit: cover;
 }
 
@@ -11,8 +11,7 @@
 	border-radius: 40px 40px 0px 0px;
 	position: relative;
 	top: -50px;
-	bottom: -50px;
-	padding: 20px 15px;
+	padding: 15px 15px 35px 15px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -22,78 +21,45 @@
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
-		padding: 0px 15px;
+		padding: 0px 10px 20px 10px;
 		&--RestaurantName {
 			font-family: $font-logoTitres;
-			font-size: $font-size-XL;
+			font-size: $font-size-XXL;
 			font-weight: $font-weight-medium;
 		}
 		&--heartnormal {
 			font-size: $font-size-XL;
 		}
 	}
-}
-
-.BlocEntrees {
-	width: 100%;
-	height: 33%;
-	&__title {
-		@include miseenformetitreblocplat;
+	.BlocEntrees {
+		width: 100%;
+		height: 33%;
+		margin-top: 0px;
+		&__title {
+			@include miseenformetitreblocplat;
+		}
 	}
-}
-
-.BlocPlats {
-	width: 100%;
-	height: 33%;
-	&__title {
-		@include miseenformetitreblocplat;
+	.BlocPlats {
+		width: 100%;
+		height: 33%;
+		margin-top: 35px;
+		&__title {
+			@include miseenformetitreblocplat;
+		}
 	}
-}
-
-.BlocDesserts {
-	width: 100%;
-	height: 33%;
-	&__title {
-		@include miseenformetitreblocplat;
-	}
-}
-
-.Menucard {
-	width: 100%;
-	height: 70px;
-	padding: 10px;
-	margin: 10px 0px;
-	background-color: $background-alt-1;
-	border-radius: 15px;
-	box-shadow: 4px 4px 4px $background-alt-4;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	justify-content: space-between;
-	align-content: center;
-	&__plat {
-		font-size: $font-size-L;
-		font-weight: $font-weight-large;
-		padding-top: 4px;
-		padding-bottom: 6px;
-	}
-	&__platdetails {
-		font-size: $font-size-S;
-	}
-	&__platprice {
-		font-size: $font-size-M;
-		font-weight: $font-weight-large;
-		margin-left: auto;
-		margin-top: -20px;
+	.BlocDesserts {
+		width: 100%;
+		height: 33%;
+		margin-top: 35px;
+		&__title {
+			@include miseenformetitreblocplat;
+		}
 	}
 }
 
 .form__result-button {
-	margin: 20px;
+	margin: 35px;
 }
-footer {
+.footer {
 	margin-top: -50px;
-}
-.Menucard__platdetails--bold {
-	font-weight: $font-weight-large;
 }

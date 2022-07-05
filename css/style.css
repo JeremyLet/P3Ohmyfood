@@ -309,6 +309,7 @@ template {
   display: none;
 }
 
+/* Restautant Name Menus */
 /* H1 */
 /* H2 */
 /* Placeholder, txt buttons, txt cards */
@@ -320,12 +321,11 @@ body {
 
 a {
   text-decoration: none;
-  color: #fff;
 }
 
 .form__first-slogan,
 .filters__title,
-.cards__title {
+.HomeCards__title {
   font-size: 24px;
   font-weight: 800;
 }
@@ -340,18 +340,22 @@ a {
   font-size: 16px;
 }
 
-.descriptionbloc__TxtPart--Name {
+.HomeCard__description--Name {
   font-size: 18px;
   font-weight: 800;
 }
 
-.descriptionbloc__TxtPart--Town {
+.HomeCard__description--Town {
   font-weight: 400;
 }
 
 .footer__title {
   font-family: "Shrikhand";
   font-weight: 200;
+}
+
+.Menucard__platdetails--bold {
+  font-weight: 600;
 }
 
 .form {
@@ -380,12 +384,12 @@ a {
   padding: 50px 0px 25px 15px;
 }
 
-.cards {
+.HomeCards {
   background-color: #f6f6f6;
   padding: 15px 15px 45px 15px;
 }
 
-.cards__title {
+.HomeCards__title {
   padding-top: 40px;
   padding-bottom: 22px;
   margin: 0px;
@@ -393,7 +397,7 @@ a {
 
 .titleImage {
   width: 100%;
-  height: 250px;
+  height: 265px;
   object-fit: cover;
 }
 
@@ -404,8 +408,7 @@ a {
   border-radius: 40px 40px 0px 0px;
   position: relative;
   top: -50px;
-  bottom: -50px;
-  padding: 20px 15px;
+  padding: 15px 15px 35px 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -416,22 +419,22 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 15px;
+  padding: 0px 10px 20px 10px;
 }
 .BlocMenu .BlocMenu__title--RestaurantName {
   font-family: "Shrikhand";
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 400;
 }
 .BlocMenu .BlocMenu__title--heartnormal {
   font-size: 24px;
 }
-
-.BlocEntrees {
+.BlocMenu .BlocEntrees {
   width: 100%;
   height: 33%;
+  margin-top: 0px;
 }
-.BlocEntrees__title {
+.BlocMenu .BlocEntrees__title {
   font-size: 14px;
   text-transform: uppercase;
   width: 40px;
@@ -439,12 +442,12 @@ a {
   margin: 0px;
   padding-bottom: 5px;
 }
-
-.BlocPlats {
+.BlocMenu .BlocPlats {
   width: 100%;
   height: 33%;
+  margin-top: 35px;
 }
-.BlocPlats__title {
+.BlocMenu .BlocPlats__title {
   font-size: 14px;
   text-transform: uppercase;
   width: 40px;
@@ -452,60 +455,26 @@ a {
   margin: 0px;
   padding-bottom: 5px;
 }
-
-.BlocDesserts {
+.BlocMenu .BlocDesserts {
   width: 100%;
   height: 33%;
+  margin-top: 35px;
 }
-.BlocDesserts__title {
+.BlocMenu .BlocDesserts__title {
   font-size: 14px;
   text-transform: uppercase;
   width: 40px;
   border-bottom: 3px solid #99e2d0;
   margin: 0px;
   padding-bottom: 5px;
-}
-
-.Menucard {
-  width: 100%;
-  height: 70px;
-  padding: 10px;
-  margin: 10px 0px;
-  background-color: #fff;
-  border-radius: 15px;
-  box-shadow: 4px 4px 4px #cfcfcf;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  align-content: center;
-}
-.Menucard__plat {
-  font-size: 18px;
-  font-weight: 600;
-  padding-top: 4px;
-  padding-bottom: 6px;
-}
-.Menucard__platdetails {
-  font-size: 14px;
-}
-.Menucard__platprice {
-  font-size: 16px;
-  font-weight: 600;
-  margin-left: auto;
-  margin-top: -20px;
 }
 
 .form__result-button {
-  margin: 20px;
+  margin: 35px;
 }
 
-footer {
+.footer {
   margin-top: -50px;
-}
-
-.Menucard__platdetails--bold {
-  font-weight: 600;
 }
 
 .headerHome {
@@ -574,6 +543,7 @@ footer {
   background-color: #000;
   color: #fff;
   padding: 20px 15px;
+  margin-top: 0px;
 }
 
 .footer__title {
@@ -594,6 +564,9 @@ footer {
   font-size: 14px;
   width: 30px;
   padding-right: 15px;
+}
+.footer__list--mail {
+  color: #fff;
 }
 
 .form__result-button {
@@ -639,14 +612,14 @@ footer {
   font-weight: 800;
 }
 
-.card {
+.HomeCard {
   height: 250px;
   width: 100%;
   box-shadow: 4px 4px 8px #cfcfcf;
   border-radius: 15px;
   margin-bottom: 20px;
 }
-.card .card__button--new {
+.HomeCard .HomeCard__button--new {
   display: none;
   background-color: #99e2d0;
   color: #008766;
@@ -660,42 +633,70 @@ footer {
   z-index: 9999;
   margin: 10px;
 }
-
-.picturebloc {
+.HomeCard .HomeCard__picture {
   width: 100%;
   height: 70%;
   object-fit: cover;
   border-radius: 15px 15px 0px 0px;
   z-index: -1;
 }
-
-.descriptionbloc {
+.HomeCard .HomeCard__descriptionBloc {
   background-color: #fff;
   width: 100%;
   height: 30%;
-  margin-top: -5px;
   padding: 10px;
   border-radius: 0px 0px 15px 15px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  color: #000;
 }
-.descriptionbloc .descriptionbloc__TxtPart {
+.HomeCard .HomeCard__descriptionBloc .HomeCard__description {
   padding-top: 5px;
 }
-.descriptionbloc .descriptionbloc__TxtPart--Name {
+.HomeCard .HomeCard__descriptionBloc .HomeCard__description--Name {
   margin: 0px;
   padding-bottom: 5px;
   color: #000;
 }
-.descriptionbloc .descriptionbloc__TxtPart--Town {
+.HomeCard .HomeCard__descriptionBloc .HomeCard__description--Town {
   margin: 0px;
   color: #000;
 }
-.descriptionbloc .descriptionbloc__TxtPart--NormalHeart {
+.HomeCard .descriptionbloc__TxtPart--NormalHeart {
   font-size: 24px;
   color: #000;
+}
+
+.Menucard {
+  width: 100%;
+  height: 67px;
+  padding: 10px;
+  margin: 15px 0px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 4px 4px 4px #cfcfcf;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-content: center;
+}
+.Menucard__plat {
+  font-size: 18px;
+  font-weight: 600;
+  padding-top: 4px;
+  padding-bottom: 6px;
+}
+.Menucard__platdetails {
+  font-size: 14px;
+}
+.Menucard__platprice {
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: auto;
+  margin-top: -20px;
 }
 
 html {

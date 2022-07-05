@@ -1,10 +1,10 @@
-.card {
+.HomeCard {
 	height: 250px;
 	width: 100%;
 	box-shadow: 4px 4px 8px $background-alt-4;
 	border-radius: 15px;
 	margin-bottom: 20px;
-	.card__button--new {
+	.HomeCard__button--new {
 		display: none;
 		background-color: $background-alt-6;
 		color: $font-color-3;
@@ -18,39 +18,69 @@
 		z-index: 9999;
 		margin: 10px;
 	}
-}
-.picturebloc {
-	width: 100%;
-	height: 70%;
-	object-fit: cover;
-	border-radius: 15px 15px 0px 0px;
-	z-index: -1;
-}
-.descriptionbloc {
-	background-color: $background-alt-1;
-	width: 100%;
-	height: 30%;
-	margin-top: -5px;
-	padding: 10px;
-	border-radius: 0px 0px 15px 15px;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	.descriptionbloc__TxtPart {
-		padding-top: 5px;
-		&--Name {
-			margin: 0px;
-			padding-bottom: 5px;
-			color: $font-color-2;
-		}
-		&--Town {
-			margin: 0px;
-			color: $font-color-2;
+	.HomeCard__picture {
+		width: 100%;
+		height: 70%;
+		object-fit: cover;
+		border-radius: 15px 15px 0px 0px;
+		z-index: -1;
+	}
+	.HomeCard__descriptionBloc {
+		background-color: $background-alt-1;
+		width: 100%;
+		height: 30%;
+		padding: 10px;
+		border-radius: 0px 0px 15px 15px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		color: $font-color-2;
+		.HomeCard__description {
+			padding-top: 5px;
+			&--Name {
+				margin: 0px;
+				padding-bottom: 5px;
+				color: $font-color-2;
+			}
+			&--Town {
+				margin: 0px;
+				color: $font-color-2;
+			}
 		}
 	}
 	.descriptionbloc__TxtPart--NormalHeart {
 		font-size: 24px;
 		color: $font-color-2;
+	}
+}
+
+.Menucard {
+	width: 100%;
+	height: 67px;
+	padding: 10px;
+	margin: 15px 0px;
+	background-color: $background-alt-1;
+	border-radius: 15px;
+	box-shadow: 4px 4px 4px $background-alt-4;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	align-content: center;
+	&__plat {
+		font-size: $font-size-L;
+		font-weight: $font-weight-large;
+		padding-top: 4px;
+		padding-bottom: 6px;
+	}
+	&__platdetails {
+		font-size: $font-size-S;
+	}
+	&__platprice {
+		font-size: $font-size-M;
+		font-weight: $font-weight-large;
+		margin-left: auto;
+		margin-top: -20px;
 	}
 }

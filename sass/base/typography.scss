@@ -16,6 +16,7 @@ $background-alt-4: #cfcfcf;
 $background-alt-5: #eaeaea;
 $background-alt-6: #99e2d0;
 
+$font-size-XXL: 28px; /* Restautant Name Menus */
 $font-size-XL: 24px; /* H1 */
 $font-size-L: 18px; /* H2 */
 $font-size-M: 16px; /* Placeholder, txt buttons, txt cards */
@@ -33,12 +34,11 @@ body {
 
 a {
 	text-decoration: none;
-	color: $font-color-1;
 }
 
 .form__first-slogan,
 .filters__title,
-.cards__title {
+.HomeCards__title {
 	font-size: $font-size-XL;
 	font-weight: $font-weight-big;
 }
@@ -53,16 +53,20 @@ a {
 	font-size: $font-size-M;
 }
 
-.descriptionbloc__TxtPart--Name {
+.HomeCard__description--Name {
 	font-size: $font-size-L;
 	font-weight: $font-weight-big;
 }
 
-.descriptionbloc__TxtPart--Town {
+.HomeCard__description--Town {
 	font-weight: $font-weight-medium;
 }
 
 .footer__title {
 	font-family: $font-logoTitres;
 	font-weight: $font-weight-light;
+}
+
+.Menucard__platdetails--bold {
+	font-weight: $font-weight-large;
 }
