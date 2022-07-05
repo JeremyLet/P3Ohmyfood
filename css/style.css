@@ -504,6 +504,10 @@ footer {
   margin-top: -50px;
 }
 
+.Menucard__platdetails--bold {
+  font-weight: 600;
+}
+
 .headerHome {
   width: 100%;
   height: 60px;
