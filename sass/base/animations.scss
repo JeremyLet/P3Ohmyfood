@@ -1,0 +1,7 @@
+.filterbutton:hover {
+	background-color: lighten($second-color, 20%);
+	cursor: pointer;
+	.filterbutton__icon {
+		color: $first-color;
+	}
+}

@@ -358,6 +358,14 @@ a {
   font-weight: 600;
 }
 
+.filterbutton:hover {
+  background-color: #ffdff6;
+  cursor: pointer;
+}
+.filterbutton:hover .filterbutton__icon {
+  color: #9356dc;
+}
+
 .form {
   width: 100%;
   height: 337px;
