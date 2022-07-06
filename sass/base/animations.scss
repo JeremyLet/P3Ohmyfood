@@ -12,7 +12,7 @@
 
 /*LOADING SPINNER */
 
-@keyframes LoadingSpinner {
+/*@keyframes LoadingSpinner {
 	0% {
 		opacity: 0.1;
 	}
@@ -36,4 +36,26 @@ body {
 	animation-iteration-count: 1;
 	animation-delay: 0s;
 	animation-play-state: running;
+}*/
+
+/* EFFET COEUR */
+
+/*@keyframes Heartfull {
+	0% {
+		background-color: white;
+	}
+	50% {
+		background-color: $first-color;
+	}
+	100% {
+		background-color: $second-color;
+	}
 }
+
+.fa-heart:hover {
+	animation-name: Heartfull;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-delay: 0s;
+	animation-play-state: running;
+}*/
