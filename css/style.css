@@ -371,33 +371,94 @@ a {
 }
 
 /*LOADING SPINNER */
-/*@keyframes LoadingSpinner {
-	0% {
-		opacity: 0.1;
-	}
-	33% {
-		opacity: 0.1;
-		background: url("/images/logo/ohmyfood@2x.svg") no-repeat;
-	}
-
-	66% {
-		opacity: 0.1;
-		background: url("/images/logo/ohmyfood@2x.svg") no-repeat;
-	}
-	100% {
-		opacity: 1;
-	}
+.effet {
+  font-size: 48px;
+  font-family: "Shrikhand";
+  text-align: center;
 }
 
-body {
-	animation-name: LoadingSpinner;
-	animation-duration: 30s;
-	animation-iteration-count: 1;
-	animation-delay: 0s;
-	animation-play-state: running;
-}*/
+.effet i {
+  font-size: 36px;
+  margin: 5px;
+}
+
+.effet--word1 {
+  animation: color-animation 3s linear 1 forwards;
+}
+
+.effet--word2 {
+  animation: color-animation 3s linear 1 forwards;
+}
+
+.effet--word3 {
+  animation: color-animation 3s linear 1 forwards;
+}
+
+@keyframes color-animation {
+  0% {
+    color: #9356dc;
+    opacity: 1;
+  }
+  16% {
+    color: #ff79d9;
+    opacity: 1;
+  }
+  33% {
+    color: #99e2d0;
+    opacity: 1;
+  }
+  50% {
+    color: #9356dc;
+    opacity: 1;
+  }
+  67% {
+    color: #ff79d9;
+    opacity: 1;
+  }
+  85% {
+    color: #99e2d0;
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0.15;
+  }
+  95% {
+    opacity: 0.33;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+header,
+form,
+section,
+footer {
+  animation-name: opacity;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
+  animation-play-state: running;
+}
+
 /* EFFET COEUR */
-.HomeCard__description--regularHeart:focus {
+.HomeCard__description--regularHeart:hover {
   animation-name: HeartFull;
   animation-duration: 3s;
   animation-iteration-count: 1;
@@ -488,7 +549,7 @@ body {
 .filters__title {
   margin: 0%;
   align-self: flex-start;
-  padding: 50px 0px 25px 15px;
+  padding: 0px 0px 25px 15px;
 }
 
 .HomeCards {
@@ -712,10 +773,6 @@ body {
 .filterbutton .filterbutton__text {
   font-size: 16px;
   font-weight: 800;
-}
-
-.form__result-button {
-  margin: 35px;
 }
 
 .HomeCard {
