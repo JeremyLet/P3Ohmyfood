@@ -40,22 +40,71 @@ body {
 
 /* EFFET COEUR */
 
-/*@keyframes Heartfull {
-	0% {
-		background-color: white;
-	}
-	50% {
-		background-color: $first-color;
-	}
-	100% {
-		background-color: $second-color;
-	}
-}
-
-.fa-heart:hover {
-	animation-name: Heartfull;
-	animation-duration: 2s;
-	animation-iteration-count: infinite;
+.HomeCard__description--regularHeart:focus {
+	animation-name: HeartFull;
+	animation-duration: 3s;
+	animation-iteration-count: 1;
 	animation-delay: 0s;
 	animation-play-state: running;
-}*/
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+}
+
+@keyframes HeartFull {
+	0% {
+		font-family: "Font Awesome 6 Free";
+		font-weight: 900;
+		content: "\f004";
+		color: white;
+	}
+	1% {
+		font-family: "Font Awesome 6 Free";
+		font-weight: 900;
+		content: "\f004";
+		background: -webkit-linear-gradient(top right, #9356dc 20%, #ff79d9 80%);
+		background-clip: text;
+		-webkit-background-clip: text;
+		color: transparent;
+		opacity: 0.33;
+	}
+	25% {
+		font-family: "Font Awesome 6 Free";
+		font-weight: 900;
+		content: "\f004";
+		background: -webkit-linear-gradient(top right, #9356dc 20%, #ff79d9 80%);
+		background-clip: text;
+		-webkit-background-clip: text;
+		color: transparent;
+		opacity: 0.5;
+	}
+	50% {
+		font-family: "Font Awesome 6 Free";
+		font-weight: 900;
+		content: "\f004";
+		background: -webkit-linear-gradient(top right, #9356dc 20%, #ff79d9 80%);
+		background-clip: text;
+		-webkit-background-clip: text;
+		color: transparent;
+		opacity: 0.66;
+	}
+	75% {
+		font-family: "Font Awesome 6 Free";
+		font-weight: 900;
+		content: "\f004";
+		background: -webkit-linear-gradient(top right, #9356dc 20%, #ff79d9 80%);
+		background-clip: text;
+		-webkit-background-clip: text;
+		color: transparent;
+		opacity: 0.75;
+	}
+	100% {
+		font-family: "Font Awesome 6 Free";
+		font-weight: 900;
+		content: "\f004";
+		background: -webkit-linear-gradient(top right, #9356dc 20%, #ff79d9 80%);
+		background-clip: text;
+		-webkit-background-clip: text;
+		color: transparent;
+		opacity: 1;
+	}
+}

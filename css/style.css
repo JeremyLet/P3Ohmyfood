@@ -397,25 +397,74 @@ body {
 	animation-play-state: running;
 }*/
 /* EFFET COEUR */
-/*@keyframes Heartfull {
-	0% {
-		background-color: white;
-	}
-	50% {
-		background-color: $first-color;
-	}
-	100% {
-		background-color: $second-color;
-	}
+.HomeCard__description--regularHeart:focus {
+  animation-name: HeartFull;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
+  animation-play-state: running;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
 }
 
-.fa-heart:hover {
-	animation-name: Heartfull;
-	animation-duration: 2s;
-	animation-iteration-count: infinite;
-	animation-delay: 0s;
-	animation-play-state: running;
-}*/
+@keyframes HeartFull {
+  0% {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f004";
+    color: white;
+  }
+  1% {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f004";
+    background: -webkit-linear-gradient(top right, #9356dc 20%, #ff79d9 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0.33;
+  }
+  25% {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f004";
+    background: -webkit-linear-gradient(top right, #9356dc 20%, #ff79d9 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0.5;
+  }
+  50% {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f004";
+    background: -webkit-linear-gradient(top right, #9356dc 20%, #ff79d9 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0.66;
+  }
+  75% {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f004";
+    background: -webkit-linear-gradient(top right, #9356dc 20%, #ff79d9 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0.75;
+  }
+  100% {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f004";
+    background: -webkit-linear-gradient(top right, #9356dc 20%, #ff79d9 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 1;
+  }
+}
 .form {
   width: 100%;
   height: 337px;
@@ -720,6 +769,9 @@ body {
 .HomeCard .HomeCard__descriptionBloc .HomeCard__description--Town {
   margin: 0px;
   color: #000;
+}
+.HomeCard .HomeCard__descriptionBloc .HomeCard__description--regularHeart {
+  font-size: 24px;
 }
 
 .Menucard {
