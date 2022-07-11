@@ -488,10 +488,11 @@ a {
     opacity: 1;
   }
 }
-header,
-form,
-section,
-footer {
+.headerHome,
+.form,
+.filters,
+.HomeCards,
+.footer--home {
   animation-name: opacity;
   animation-duration: 3s;
   animation-iteration-count: 1;
