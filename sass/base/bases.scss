@@ -7,27 +7,38 @@ html {
 	box-sizing: inherit;
 }
 
+/* QUERIES */
+/* Base 375PX Mobile */
+
 body {
 	max-width: 375px;
 }
 
-@media all and (min-width: 375px) {
-	body {
-		max-width: 375px;
-	}
+main {
+	max-width: 375px;
+	margin: auto;
 }
+
+/* Breakpoint 1 (Tablette) */
 
 @media all and (min-width: 768px) {
 	body {
+		max-width: 768px;
+	}
+	main {
 		max-width: 768px;
 		margin: auto;
 	}
 }
 
+/* Breakpoint 2 (Desktop) */
+
 @media all and (min-width: 992px) {
 	body {
-		min-width: 992px;
-		max-width: 2160px;
+		max-width: 1440px;
+	}
+	main {
+		max-width: 1440px;
 		margin: auto;
 	}
 }
