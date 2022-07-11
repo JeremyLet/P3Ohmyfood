@@ -1,0 +1,33 @@
+html {
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	max-width: 375px;
+}
+
+@media all and (min-width: 375px) {
+	body {
+		max-width: 375px;
+	}
+}
+
+@media all and (min-width: 768px) {
+	body {
+		max-width: 768px;
+		margin: auto;
+	}
+}
+
+@media all and (min-width: 992px) {
+	body {
+		min-width: 992px;
+		max-width: 2160px;
+		margin: auto;
+	}
+}
