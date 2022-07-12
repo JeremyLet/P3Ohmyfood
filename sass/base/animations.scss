@@ -173,7 +173,20 @@
 /* ANIMATION CHECK PAGES MENUS */
 
 .Menucard:hover {
-	.Menucard__IconPart {
+	animation-name: AnimationCheck;
+	animation-duration: 3s;
+	animation-iteration-count: 1;
+	animation-delay: 0s;
+	animation-play-state: running;
+	animation-duration: 2s;
+}
+
+@keyframes AnimationCheck {
+	0% {
 		display: flex;
+		transform: translate(-25px);
+	}
+	100% {
+		opacity: 1;
 	}
 }

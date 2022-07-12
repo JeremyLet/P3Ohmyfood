@@ -567,10 +567,24 @@ a {
 }
 
 /* ANIMATION CHECK PAGES MENUS */
-.Menucard:hover .Menucard__IconPart {
-  display: flex;
+.Menucard:hover {
+  animation-name: AnimationCheck;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
+  animation-play-state: running;
+  animation-duration: 2s;
 }
 
+@keyframes AnimationCheck {
+  0% {
+    display: flex;
+    transform: translate(-25px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /* MIXINS */
 .filters {
   height: 350px;
@@ -672,7 +686,7 @@ a {
 }
 .BlocMenu .BlocEntrees {
   width: 100%;
-  height: 33%;
+  height: 30%;
   margin-top: 35px;
 }
 @media screen and (min-width: 992px) {
@@ -728,11 +742,6 @@ a {
   padding-bottom: 5px;
 }
 
-/*.BlocEntrees,
-.BlocPlats,
-.BlocDesserts {
-	opacity: 0;
-}*/
 .headerHome {
   height: 60px;
 }
@@ -1015,6 +1024,7 @@ a {
   width: 80%;
   white-space: nowrap;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 .Menucard__platprix .Menucard__platprix--Prix {
   width: 20%;
