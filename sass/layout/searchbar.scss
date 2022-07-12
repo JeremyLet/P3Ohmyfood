@@ -27,13 +27,24 @@
 }
 
 .form__resultspresentation {
-	padding-top: 55px;
+	height: 90%;
+	padding: 50px 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
 
 	.form__first-slogan {
 		margin: 0px;
+		@include tablet {
+			font-size: $font-size-XXL;
+		}
 	}
 	.form__second-slogan {
 		margin: 0px;
 		padding: 12px 0px 30px 0px;
+		@include tablet {
+			font-size: $font-size-XL;
+		}
 	}
 }
