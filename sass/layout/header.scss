@@ -5,6 +5,9 @@
 		font-family: $font-logoTitres;
 		font-size: $font-size-XXL;
 		text-align: center;
+		@include tablet {
+			font-size: calc($font-size-XXL * 1.5);
+		}
 	}
 }
 

@@ -358,7 +358,176 @@ a {
   font-weight: 600;
 }
 
-/*@import "./base/animations";*/
+.filterbutton:hover {
+  background-color: #ffdff6;
+  cursor: pointer;
+}
+.filterbutton:hover .filterbutton__icon {
+  color: #9356dc;
+}
+
+.HomeCards {
+  cursor: pointer;
+}
+
+/*LOADING SPINNER */
+.effet--word1 {
+  animation: color-animation 3s linear 1 forwards;
+}
+
+.effet--word2 {
+  animation: color-animation 3s linear 1 forwards;
+}
+
+.effet--word3 {
+  animation: color-animation 3s linear 1 forwards;
+}
+
+@keyframes color-animation {
+  0% {
+    color: #9356dc;
+    opacity: 1;
+  }
+  16% {
+    color: #ff79d9;
+    opacity: 1;
+  }
+  33% {
+    color: #99e2d0;
+    opacity: 1;
+  }
+  50% {
+    color: #9356dc;
+    opacity: 1;
+  }
+  67% {
+    color: #ff79d9;
+    opacity: 1;
+  }
+  85% {
+    color: #99e2d0;
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0.15;
+  }
+  95% {
+    opacity: 0.33;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.headerHome,
+.form,
+.partie-filtres,
+.partie-restaurants,
+.footer--home {
+  animation-name: opacity;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
+  animation-play-state: running;
+}
+
+/* EFFET COEUR */
+.HomeCard__description--regularHeart:active {
+  animation-name: HeartFull;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
+  animation-play-state: running;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+@media all and (min-width: 375px) {
+  .HomeCard__description--regularHeart:hover {
+    animation-name: HeartFull;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
+    animation-play-state: running;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+  }
+}
+@keyframes HeartFull {
+  0% {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f004";
+    color: white;
+  }
+  1% {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f004";
+    background: -webkit-linear-gradient(top right, #9356dc 20%, #ff79d9 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0.33;
+  }
+  25% {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f004";
+    background: -webkit-linear-gradient(top right, #9356dc 20%, #ff79d9 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0.5;
+  }
+  50% {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f004";
+    background: -webkit-linear-gradient(top right, #9356dc 20%, #ff79d9 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0.66;
+  }
+  75% {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f004";
+    background: -webkit-linear-gradient(top right, #9356dc 20%, #ff79d9 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0.75;
+  }
+  100% {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f004";
+    background: -webkit-linear-gradient(top right, #9356dc 20%, #ff79d9 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 1;
+  }
+}
+/* MIXINS */
 .filters {
   height: 350px;
   padding: 0px 20px;
@@ -367,6 +536,11 @@ a {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+@media screen and (min-width: 992px) {
+  .filters {
+    height: 200px;
+  }
 }
 
 .filters__title {
@@ -402,6 +576,12 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 992px) {
+  .partie-restaurants .HomeCards {
+    height: 600px;
+  }
 }
 
 .titleImage {
@@ -486,6 +666,11 @@ a {
   font-family: "Shrikhand";
   font-size: 28px;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .headerHome__title {
+    font-size: 42px;
+  }
 }
 
 .headerMenu {
@@ -578,6 +763,12 @@ a {
   box-shadow: 0px 5px 2px #cfcfcf;
   color: #fff;
 }
+@media screen and (min-width: 768px) {
+  .form__result-button {
+    transform: scale(1.3);
+    margin-top: 25px;
+  }
+}
 
 .filterbutton {
   height: 75px;
@@ -590,6 +781,11 @@ a {
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 25px;
+}
+@media screen and (min-width: 992px) {
+  .filterbutton {
+    width: 30%;
+  }
 }
 .filterbutton .filterbutton__circleicon {
   font-size: 14px;
@@ -612,6 +808,11 @@ a {
   font-size: 16px;
   font-weight: 800;
 }
+@media screen and (min-width: 768px) {
+  .filterbutton .filterbutton__text {
+    font-size: 24px;
+  }
+}
 
 .HomeCard {
   height: 250px;
@@ -620,6 +821,11 @@ a {
   box-shadow: 4px 4px 8px #cfcfcf;
   border-radius: 15px;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 992px) {
+  .HomeCard {
+    width: 47%;
+  }
 }
 .HomeCard .HomeCard__button--new {
   display: none;
@@ -701,7 +907,6 @@ a {
 }
 
 html {
-  max-width: 375px;
   box-sizing: border-box;
 }
 
@@ -711,12 +916,8 @@ html {
   box-sizing: inherit;
 }
 
-@media all and (min-width: 375px) {
-  html {
-    max-width: 375px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+body {
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

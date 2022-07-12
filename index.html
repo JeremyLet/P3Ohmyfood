@@ -2,14 +2,8 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta
-			http-equiv="X-UA-Compatible"
-			HomeCard__description--regularHeart="IE=edge"
-		/>
-		<meta
-			name="viewport"
-			HomeCard__description--regularHeart="width=device-width, initial-scale=1.0"
-		/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Ohmyfood</title>
 		<link
 			rel="stylesheet"
@@ -29,188 +23,196 @@
 	</head>
 	<body>
 		<main>
-		<header class="headerHome">
-			<h1 class="headerHome__title">ohmyfood</h1>
-		</header>
+			<header class="headerHome">
+				<h1 class="headerHome__title">ohmyfood</h1>
+			</header>
 
-		<form class="form">
-			<i class="form__searchfield-icon fa-solid fa-location-dot"></i>
-			<input
-				class="form__searchfield-text"
-				type="text"
-				id="ville"
-				placeholder="Paris, Belleville"
-			/>
-			<div class="form__resultspresentation">
-				<h1 class="form__first-slogan">Réservez le menu qui vous convient</h1>
-				<h2 class="form__second-slogan">
-					Découvrez des restaurants d'exception, sélectionnés par nos soins
-				</h2>
+			<form class="form">
+				<i class="form__searchfield-icon fa-solid fa-location-dot"></i>
+				<input
+					class="form__searchfield-text"
+					type="text"
+					id="ville"
+					placeholder="Paris, Belleville"
+				/>
+				<div class="form__resultspresentation">
+					<h1 class="form__first-slogan">Réservez le menu qui vous convient</h1>
+					<h2 class="form__second-slogan">
+						Découvrez des restaurants d'exception, sélectionnés par nos soins
+					</h2>
+				</div>
+				<button class="form__result-button">Explorer nos restaurants</button>
+			</form>
+
+			<div class="effetLoadingSpinner">
+				<span class="effet--word1"><i class="fa-solid fa-utensils"></i>Oh</span>
+				<span class="effet--word2">my</span>
+				<span class="effet--word3"
+					>food<i class="fa-solid fa-utensils"></i
+				></span>
 			</div>
-			<button class="form__result-button">Explorer nos restaurants</button>
-		</form>
 
-		<div class="effetLoadingSpinner">
-			<span class="effet--word1"><i class="fa-solid fa-utensils"></i>Oh</span>
-			<span class="effet--word2">my</span>
-			<span class="effet--word3">food<i class="fa-solid fa-utensils"></i></span>
-		</div>
-
-		<section class="partie-filtres">
-			<h1 class="filters__title">Fonctionnement</h1>
-			<div class="filters">
-				<button class="filterbutton">
-					<span class="filterbutton__circleicon fa-stack fa-2x">
-						<i
-							class="filterbutton__circleicon--circleobject fa-solid fa-circle fa-stack-2x"
-						></i>
-						<i
-							class="filterbutton__circleicon--circlenumber fa-solid fa-1 fa-stack-1x"
-						></i>
-					</span>
-					<i class="filterbutton__icon fa-solid fa-mobile-screen"></i>
-					<span class="filterbutton__text">Choisissez un restaurant</span>
-				</button>
-
-				<button class="filterbutton">
-					<span class="filterbutton__circleicon fa-stack fa-2x">
-						<i
-							class="filterbutton__circleicon--circleobject fa-solid fa-circle fa-stack-2x"
-						></i>
-						<i
-							class="filterbutton__circleicon--circlenumber fa-solid fa-2 fa-stack-1x"
-						></i>
-					</span>
-					<i class="filterbutton__icon fa-solid fa-list"></i>
-					<span class="filterbutton__text">Composez votre menu</span>
-				</button>
-
-				<button class="filterbutton">
-					<span class="filterbutton__circleicon fa-stack fa-2x">
-						<i
-							class="filterbutton__circleicon--circleobject fa-solid fa-circle fa-stack-2x"
-						></i>
-						<i
-							class="filterbutton__circleicon--circlenumber fa-solid fa-3 fa-stack-1x"
-						></i>
-					</span>
-					<i class="filterbutton__icon fa-solid fa-store"></i>
-					<span class="filterbutton__text">Dégustez au restaurant</span>
-				</button>
-			</div>
-		</section>
-
-		<section class="partie-restaurants">
-			<h1 class="HomeCards__title">Restaurants</h1>
-
-			<div class="HomeCards">
-				<div class="HomeCard">
-					<a href="lapalettedugout.html">
-						<div class="HomeCard__button--new">Nouveau</div>
-						<img
-							class="HomeCard__picture"
-							alt="Image manquante"
-							title="Titre de l'image"
-							src="images/restaurants/la_palette_du_gout.jpg"
-						/>
-						<div class="HomeCard__descriptionBloc">
-							<div class="HomeCard__description">
-								<h3 class="HomeCard__description--Name">La palette du goût</h3>
-								<h4 class="HomeCard__description--Town">Ménilmontant</h4>
-							</div>
+			<section class="partie-filtres">
+				<h1 class="filters__title">Fonctionnement</h1>
+				<div class="filters">
+					<button class="filterbutton">
+						<span class="filterbutton__circleicon fa-stack fa-2x">
 							<i
-								class="HomeCard__description--regularHeart fa-regular fa-heart"
+								class="filterbutton__circleicon--circleobject fa-solid fa-circle fa-stack-2x"
 							></i>
-						</div>
-					</a>
-				</div>
-
-				<div class="HomeCard">
-					<a href="lanoteenchantee.html">
-						<div class="HomeCard__button--new">Nouveau</div>
-						<img
-							class="HomeCard__picture"
-							alt="Image manquante"
-							title="Titre de l'image"
-							src="images/restaurants/la_note_enchantée.jpg"
-						/>
-						<div class="HomeCard__descriptionBloc">
-							<div class="HomeCard__description">
-								<h3 class="HomeCard__description--Name">La note enchantée</h3>
-								<h4 class="HomeCard__description--Town">Charonne</h4>
-							</div>
 							<i
-								class="HomeCard__description--regularHeart fa-regular fa-heart"
+								class="filterbutton__circleicon--circlenumber fa-solid fa-1 fa-stack-1x"
 							></i>
-						</div>
-					</a>
-				</div>
+						</span>
+						<i class="filterbutton__icon fa-solid fa-mobile-screen"></i>
+						<span class="filterbutton__text">Choisissez un restaurant</span>
+					</button>
 
-				<div class="HomeCard">
-					<a href="alafrancaise.html">
-						<div class="HomeCard__button--new">Nouveau</div>
-						<img
-							class="HomeCard__picture"
-							alt="Image manquante"
-							title="Titre de l'image"
-							src="images/restaurants/à_la_française.jpg"
-						/>
-						<div class="HomeCard__descriptionBloc">
-							<div class="HomeCard__description">
-								<h3 class="HomeCard__description--Name">À la française</h3>
-								<h4 class="HomeCard__description--Town">Cité Rouge</h4>
-							</div>
+					<button class="filterbutton">
+						<span class="filterbutton__circleicon fa-stack fa-2x">
 							<i
-								class="HomeCard__description--regularHeart fa-regular fa-heart"
+								class="filterbutton__circleicon--circleobject fa-solid fa-circle fa-stack-2x"
 							></i>
-						</div>
-					</a>
-				</div>
-
-				<div class="HomeCard">
-					<a href="ledeclicedessens.html">
-						<div class="HomeCard__button--new">Nouveau</div>
-						<img
-							class="HomeCard__picture"
-							alt="Image manquante"
-							title="Titre de l'image"
-							src="images/restaurants/le_délice_des_sens.jpg"
-						/>
-						<div class="HomeCard__descriptionBloc">
-							<div class="HomeCard__description">
-								<h3 class="HomeCard__description--Name">Le délice des sens</h3>
-								<h4 class="HomeCard__description--Town">Folie-Méricourt</h4>
-							</div>
 							<i
-								class="HomeCard__description--regularHeart fa-regular fa-heart"
+								class="filterbutton__circleicon--circlenumber fa-solid fa-2 fa-stack-1x"
 							></i>
-						</div>
-					</a>
-				</div>
-			</div>
-		</section>
+						</span>
+						<i class="filterbutton__icon fa-solid fa-list"></i>
+						<span class="filterbutton__text">Composez votre menu</span>
+					</button>
 
-		<footer class="footerHome">
-			<h3 class="footerHome__title">ohmyfood</h3>
-			<ul class="footerHome__list">
-				<li class="footerHome__list-subelement">
-					<i class="footerHome__list-subelement--icon fa-solid fa-utensils"></i
-					>Proposer un restaurant
-				</li>
-				<li class="footerHome__list-subelement">
-					<i
-						class="footerHome__list-subelement--icon fa-solid fa-handshake-angle"
-					></i
-					>Devenir partenaire
-				</li>
-				<li class="footerHome__list-subelement">Mentions légales</li>
-				<li class="footerHome__list-subelement">
-					<a class="footerHome__list--mail" href="mailto:contact@contact.com"
-						>Contact</a
-					>
-				</li>
-			</ul>
-		</footerHome>
-	</main>
+					<button class="filterbutton">
+						<span class="filterbutton__circleicon fa-stack fa-2x">
+							<i
+								class="filterbutton__circleicon--circleobject fa-solid fa-circle fa-stack-2x"
+							></i>
+							<i
+								class="filterbutton__circleicon--circlenumber fa-solid fa-3 fa-stack-1x"
+							></i>
+						</span>
+						<i class="filterbutton__icon fa-solid fa-store"></i>
+						<span class="filterbutton__text">Dégustez au restaurant</span>
+					</button>
+				</div>
+			</section>
+
+			<section class="partie-restaurants">
+				<h1 class="HomeCards__title">Restaurants</h1>
+
+				<div class="HomeCards">
+					<div class="HomeCard">
+						<a href="lapalettedugout.html">
+							<div class="HomeCard__button--new">Nouveau</div>
+							<img
+								class="HomeCard__picture"
+								alt="Image manquante"
+								title="Titre de l'image"
+								src="images/restaurants/la_palette_du_gout.jpg"
+							/>
+							<div class="HomeCard__descriptionBloc">
+								<div class="HomeCard__description">
+									<h3 class="HomeCard__description--Name">
+										La palette du goût
+									</h3>
+									<h4 class="HomeCard__description--Town">Ménilmontant</h4>
+								</div>
+								<i
+									class="HomeCard__description--regularHeart fa-regular fa-heart"
+								></i>
+							</div>
+						</a>
+					</div>
+
+					<div class="HomeCard">
+						<a href="lanoteenchantee.html">
+							<div class="HomeCard__button--new">Nouveau</div>
+							<img
+								class="HomeCard__picture"
+								alt="Image manquante"
+								title="Titre de l'image"
+								src="images/restaurants/la_note_enchantée.jpg"
+							/>
+							<div class="HomeCard__descriptionBloc">
+								<div class="HomeCard__description">
+									<h3 class="HomeCard__description--Name">La note enchantée</h3>
+									<h4 class="HomeCard__description--Town">Charonne</h4>
+								</div>
+								<i
+									class="HomeCard__description--regularHeart fa-regular fa-heart"
+								></i>
+							</div>
+						</a>
+					</div>
+
+					<div class="HomeCard">
+						<a href="alafrancaise.html">
+							<div class="HomeCard__button--new">Nouveau</div>
+							<img
+								class="HomeCard__picture"
+								alt="Image manquante"
+								title="Titre de l'image"
+								src="images/restaurants/à_la_française.jpg"
+							/>
+							<div class="HomeCard__descriptionBloc">
+								<div class="HomeCard__description">
+									<h3 class="HomeCard__description--Name">À la française</h3>
+									<h4 class="HomeCard__description--Town">Cité Rouge</h4>
+								</div>
+								<i
+									class="HomeCard__description--regularHeart fa-regular fa-heart"
+								></i>
+							</div>
+						</a>
+					</div>
+
+					<div class="HomeCard">
+						<a href="ledeclicedessens.html">
+							<div class="HomeCard__button--new">Nouveau</div>
+							<img
+								class="HomeCard__picture"
+								alt="Image manquante"
+								title="Titre de l'image"
+								src="images/restaurants/le_délice_des_sens.jpg"
+							/>
+							<div class="HomeCard__descriptionBloc">
+								<div class="HomeCard__description">
+									<h3 class="HomeCard__description--Name">
+										Le délice des sens
+									</h3>
+									<h4 class="HomeCard__description--Town">Folie-Méricourt</h4>
+								</div>
+								<i
+									class="HomeCard__description--regularHeart fa-regular fa-heart"
+								></i>
+							</div>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<footer class="footerHome">
+				<h3 class="footerHome__title">ohmyfood</h3>
+				<ul class="footerHome__list">
+					<li class="footerHome__list-subelement">
+						<i
+							class="footerHome__list-subelement--icon fa-solid fa-utensils"
+						></i
+						>Proposer un restaurant
+					</li>
+					<li class="footerHome__list-subelement">
+						<i
+							class="footerHome__list-subelement--icon fa-solid fa-handshake-angle"
+						></i
+						>Devenir partenaire
+					</li>
+					<li class="footerHome__list-subelement">Mentions légales</li>
+					<li class="footerHome__list-subelement">
+						<a class="footerHome__list--mail" href="mailto:contact@contact.com"
+							>Contact</a
+						>
+					</li>
+				</ul>
+			</footer>
+		</main>
 	</body>
 </html>
