@@ -721,36 +721,36 @@ a {
   padding: 12px 0px 30px 0px;
 }
 
-.footerHome {
+.footer {
   background-color: #000;
   color: #fff;
   padding: 20px 15px;
 }
-.footerHome--home {
+.footer--home {
   margin-top: 0px;
 }
-.footerHome--menus {
+.footer--menus {
   margin-top: -50px;
 }
-.footerHome .footerHome__title {
+.footer .footer__title {
   margin: 0px;
   padding-top: 5px;
   padding-bottom: 10px;
 }
-.footerHome .footerHome__list {
+.footer .footer__list {
   list-style-type: none;
   padding: 0px;
   margin: 0px;
 }
-.footerHome .footerHome__list-subelement {
+.footer .footer__list-subelement {
   padding-top: 8px;
 }
-.footerHome .footerHome__list-subelement--icon {
+.footer .footer__list-subelement--icon {
   font-size: 14px;
   width: 30px;
   padding-right: 15px;
 }
-.footerHome .footerHome__list--mail {
+.footer .footer__list--mail {
   color: #fff;
 }
 

@@ -1,4 +1,4 @@
-.footerHome {
+.footer {
 	background-color: $background-alt-2;
 	color: $font-color-1;
 	padding: 20px 15px;
@@ -8,12 +8,12 @@
 	&--menus {
 		margin-top: -50px;
 	}
-	.footerHome__title {
+	.footer__title {
 		margin: 0px;
 		padding-top: 5px;
 		padding-bottom: 10px;
 	}
-	.footerHome__list {
+	.footer__list {
 		list-style-type: none;
 		padding: 0px;
 		margin: 0px;
