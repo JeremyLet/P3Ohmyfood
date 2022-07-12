@@ -1,8 +1,7 @@
 @import "./abstracts/mixins";
-@import "./base/bases";
 @import "./base/normalize";
 @import "./base/typography";
-@import "./base/animations";
+/*@import "./base/animations";*/
 @import "./pages/accueil";
 @import "./pages/menus";
 @import "./layout/header";
@@ -10,3 +9,20 @@
 @import "./layout/footer";
 @import "./components/buttons";
 @import "./components/cards";
+
+html {
+	max-width: 375px;
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+@media all and (min-width: 375px) {
+	html {
+		max-width: 375px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

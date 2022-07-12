@@ -29,43 +29,36 @@
 	</head>
 	<body>
 		<main>
-			<header class="headerHome">
-				<img
-					class="headerHome__logo"
-					src="images/logo/ohmyfood@2x.svg"
-					alt="Image manquante"
-					title="logo__Ohmyfood"
-				/>
-			</header>
+		<header class="headerHome">
+			<h1 class="headerHome__title">ohmyfood</h1>
+		</header>
 
-			<form class="form">
-				<i class="form__searchfield-icon fa-solid fa-location-dot"></i>
-				<input
-					class="form__searchfield-text"
-					type="text"
-					id="ville"
-					placeholder="Paris, Belleville"
-				/>
-				<div class="form__resultspresentation">
-					<h1 class="form__first-slogan">Réservez le menu qui vous convient</h1>
-					<h2 class="form__second-slogan">
-						Découvrez des restaurants d'exception, sélectionnés par nos soins
-					</h2>
-				</div>
-				<button class="form__result-button">Explorer nos restaurants</button>
-			</form>
-
-			<div class="effet">
-				<span class="effet--word1"><i class="fa-solid fa-utensils"></i>Oh</span>
-				<span class="effet--word2">my</span>
-				<span class="effet--word3"
-					>food<i class="fa-solid fa-utensils"></i
-				></span>
+		<form class="form">
+			<i class="form__searchfield-icon fa-solid fa-location-dot"></i>
+			<input
+				class="form__searchfield-text"
+				type="text"
+				id="ville"
+				placeholder="Paris, Belleville"
+			/>
+			<div class="form__resultspresentation">
+				<h1 class="form__first-slogan">Réservez le menu qui vous convient</h1>
+				<h2 class="form__second-slogan">
+					Découvrez des restaurants d'exception, sélectionnés par nos soins
+				</h2>
 			</div>
+			<button class="form__result-button">Explorer nos restaurants</button>
+		</form>
 
-			<section class="filters">
-				<h1 class="filters__title">Fonctionnement</h1>
+		<div class="effetLoadingSpinner">
+			<span class="effet--word1"><i class="fa-solid fa-utensils"></i>Oh</span>
+			<span class="effet--word2">my</span>
+			<span class="effet--word3">food<i class="fa-solid fa-utensils"></i></span>
+		</div>
 
+		<section class="partie-filtres">
+			<h1 class="filters__title">Fonctionnement</h1>
+			<div class="filters">
 				<button class="filterbutton">
 					<span class="filterbutton__circleicon fa-stack fa-2x">
 						<i
@@ -104,11 +97,13 @@
 					<i class="filterbutton__icon fa-solid fa-store"></i>
 					<span class="filterbutton__text">Dégustez au restaurant</span>
 				</button>
-			</section>
+			</div>
+		</section>
 
-			<section class="HomeCards">
-				<h1 class="HomeCards__title">Restaurants</h1>
+		<section class="partie-restaurants">
+			<h1 class="HomeCards__title">Restaurants</h1>
 
+			<div class="HomeCards">
 				<div class="HomeCard">
 					<a href="lapalettedugout.html">
 						<div class="HomeCard__button--new">Nouveau</div>
@@ -192,29 +187,30 @@
 						</div>
 					</a>
 				</div>
-			</section>
+			</div>
+		</section>
 
-			<footer class="footer footer--home">
-				<h3 class="footer__title">ohmyfood</h3>
-				<ul class="footer__list">
-					<li class="footer__list-subelement">
-						<i class="footer__list-subelement--icon fa-solid fa-utensils"></i
-						>Proposer un restaurant
-					</li>
-					<li class="footer__list-subelement">
-						<i
-							class="footer__list-subelement--icon fa-solid fa-handshake-angle"
-						></i
-						>Devenir partenaire
-					</li>
-					<li class="footer__list-subelement">Mentions légales</li>
-					<li class="footer__list-subelement">
-						<a class="footer__list--mail" href="mailto:contact@contact.com"
-							>Contact</a
-						>
-					</li>
-				</ul>
-			</footer>
-		</main>
+		<footer class="footerHome">
+			<h3 class="footerHome__title">ohmyfood</h3>
+			<ul class="footerHome__list">
+				<li class="footerHome__list-subelement">
+					<i class="footerHome__list-subelement--icon fa-solid fa-utensils"></i
+					>Proposer un restaurant
+				</li>
+				<li class="footerHome__list-subelement">
+					<i
+						class="footerHome__list-subelement--icon fa-solid fa-handshake-angle"
+					></i
+					>Devenir partenaire
+				</li>
+				<li class="footerHome__list-subelement">Mentions légales</li>
+				<li class="footerHome__list-subelement">
+					<a class="footerHome__list--mail" href="mailto:contact@contact.com"
+						>Contact</a
+					>
+				</li>
+			</ul>
+		</footerHome>
+	</main>
 	</body>
 </html>

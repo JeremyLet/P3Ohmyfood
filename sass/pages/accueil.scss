@@ -1,25 +1,11 @@
-.form {
-	width: 100%;
-	height: 337px;
-	background: linear-gradient(
-		to top,
-		$background-alt-3 0% 86%,
-		$background-alt-5 86% 100%
-	);
-	border-top: 2px solid #cecece;
-}
-
-::placeholder {
-	background: $background-alt-5;
-	border: 0px solid $background-alt-5;
-}
-
 .filters {
-	width: 100%;
-	height: 440px;
+	height: 350px;
+	padding: 0px 20px;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 .filters__title {
@@ -28,13 +14,30 @@
 	padding: 0px 0px 25px 15px;
 }
 
-.HomeCards {
-	background-color: $background-alt-3;
-	padding: 15px 15px 45px 15px;
-	width: 100%;
+.effetLoadingSpinner {
+	font-size: 48px;
+	font-family: "Shrikhand";
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }
-.HomeCards__title {
-	padding-top: 40px;
-	padding-bottom: 22px;
-	margin: 0px;
+.effetLoadingSpinner i {
+	font-size: 36px;
+	margin: 5px;
+}
+
+.partie-restaurants {
+	background-color: $background-alt-3;
+	.HomeCards__title {
+		padding-top: 40px;
+		padding-bottom: 22px;
+		margin: 0px;
+	}
+	.HomeCards {
+		background-color: $background-alt-3;
+		padding: 15px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 }

@@ -1,4 +1,12 @@
 .form {
+	height: 337px;
+
+	background: linear-gradient(
+		to top,
+		$background-alt-3 0% 86%,
+		$background-alt-5 86% 100%
+	);
+	border-top: 2px solid #cecece;
 	text-align: center;
 	&__searchfield-icon {
 		padding-top: 15px;
@@ -12,12 +20,15 @@
 			color: $font-color-2;
 			font-weight: $font-weight-large;
 			padding-left: 25px;
+			background: $background-alt-5;
+			border: 0px solid $background-alt-5;
 		}
 	}
 }
 
 .form__resultspresentation {
 	padding-top: 55px;
+
 	.form__first-slogan {
 		margin: 0px;
 	}
