@@ -665,7 +665,7 @@ a {
   .BlocMenu {
     flex-direction: row;
     align-items: flex-start;
-    height: 530px;
+    height: 650px;
   }
 }
 .BlocMenu .BlocMenu__title {
