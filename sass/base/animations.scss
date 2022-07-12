@@ -130,3 +130,50 @@
 		opacity: 1;
 	}
 }
+
+/* ANIMATION APPARATION MENUS */
+
+@keyframes LoadingMenus {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.BlocEntrees {
+	animation-name: LoadingMenus;
+	animation-duration: 6s;
+	animation-iteration-count: 1;
+	animation-delay: 0s;
+	animation-play-state: running;
+	animation-fill-mode: forwards;
+}
+.BlocPlats {
+	animation-name: LoadingMenus;
+	animation-duration: 6s;
+	animation-iteration-count: 1;
+	animation-delay: 6s;
+	animation-play-state: running;
+	animation-fill-mode: forwards;
+}
+.BlocDesserts {
+	animation-name: LoadingMenus;
+	animation-duration: 6s;
+	animation-iteration-count: 1;
+	animation-delay: 12s;
+	animation-play-state: running;
+	animation-fill-mode: forwards;
+}
+
+/* ANIMATION CHECK PAGES MENUS */
+
+.Menucard:hover {
+	.Menucard__IconPart {
+		display: flex;
+	}
+}
