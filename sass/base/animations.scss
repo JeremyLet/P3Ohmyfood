@@ -172,21 +172,45 @@
 
 /* ANIMATION CHECK PAGES MENUS */
 
-#Menucard:hover #Menucard__IconPart {
-	animation-name: AnimationCheck;
-	animation-duration: 3s;
-	animation-iteration-count: 1;
-	animation-delay: 0s;
-	animation-play-state: running;
-	animation-duration: 2s;
+#Menucard:active #Menucard__IconPart {
+	animation: AnimationCheck 3s 1 linear;
+}
+
+#Menucard:active #Menucard__IconPart > .Menucard__IconPart--check {
+	animation: RotateHeart 3s 1 linear;
 }
 
 @keyframes AnimationCheck {
 	0% {
-		display: flex;
-		transform: translate(-25px);
+		opacity: 0;
+		width: 0%;
+	}
+	25% {
+		opacity: 1;
+		width: 5%;
+	}
+	50% {
+		opacity: 1;
+		width: 10%;
+	}
+	75% {
+		opacity: 1;
+		width: 5%;
 	}
 	100% {
-		opacity: 1;
+		opacity: 0;
+		width: 0%;
+	}
+}
+
+@keyframes RotateHeart {
+	0% {
+		transform: rotate(90deg);
+	}
+	50% {
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(360deg);
 	}
 }
