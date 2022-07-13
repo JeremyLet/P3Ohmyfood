@@ -75,7 +75,7 @@
 		align-items: flex-start;
 		justify-content: space-between;
 		align-content: center;
-		width: 85%;
+		width: 100%;
 		padding: 10px;
 	}
 	.Menucard__TxtPart--title {
@@ -93,7 +93,7 @@
 	align-items: center;
 	.Menucard__platprix--Plat {
 		font-size: $font-size-S;
-		width: 85%;
+		width: 80%;
 		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;
@@ -106,16 +106,14 @@
 	}
 }
 #Menucard__IconPart {
+	opacity: 0;
 	height: 67px;
-	background-color: $background-alt-6;
-	width: 15%;
-	border-radius: 0px 15px 15px 0px;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	opacity: 0;
 	align-items: center;
 	.Menucard__IconPart--check {
+		opacity: 0;
 		font-size: $font-size-XXL;
 		color: $font-color-1;
 	}

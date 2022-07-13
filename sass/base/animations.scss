@@ -182,35 +182,56 @@
 
 @keyframes AnimationCheck {
 	0% {
-		opacity: 0;
-		width: 0%;
+		opacity: 1;
+		background-color: $background-alt-6;
+		width: 3%;
+		border-radius: 0px 15px 15px 0px;
 	}
 	25% {
 		opacity: 1;
-		width: 5%;
+		background-color: $background-alt-6;
+		width: 7%;
+		border-radius: 0px 15px 15px 0px;
 	}
 	50% {
 		opacity: 1;
-		width: 10%;
+		background-color: $background-alt-6;
+		width: 15%;
+		border-radius: 0px 15px 15px 0px;
 	}
 	75% {
 		opacity: 1;
-		width: 5%;
+		background-color: $background-alt-6;
+		width: 7%;
+		border-radius: 0px 15px 15px 0px;
 	}
 	100% {
-		opacity: 0;
-		width: 0%;
+		opacity: 1;
+		background-color: $background-alt-6;
+		width: 3%;
+		border-radius: 0px 15px 15px 0px;
 	}
 }
 
 @keyframes RotateHeart {
 	0% {
+		opacity: 1;
 		transform: rotate(90deg);
 	}
+	25% {
+		opacity: 1;
+		transform: rotate(180deg);
+	}
 	50% {
+		opacity: 1;
+		transform: rotate(360deg);
+	}
+	75% {
+		opacity: 1;
 		transform: rotate(180deg);
 	}
 	100% {
-		transform: rotate(360deg);
+		opacity: 1;
+		transform: rotate(90deg);
 	}
 }

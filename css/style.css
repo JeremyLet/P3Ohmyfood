@@ -577,35 +577,56 @@ a {
 
 @keyframes AnimationCheck {
   0% {
-    opacity: 0;
-    width: 0%;
+    opacity: 1;
+    background-color: #99e2d0;
+    width: 3%;
+    border-radius: 0px 15px 15px 0px;
   }
   25% {
     opacity: 1;
-    width: 5%;
+    background-color: #99e2d0;
+    width: 7%;
+    border-radius: 0px 15px 15px 0px;
   }
   50% {
     opacity: 1;
-    width: 10%;
+    background-color: #99e2d0;
+    width: 15%;
+    border-radius: 0px 15px 15px 0px;
   }
   75% {
     opacity: 1;
-    width: 5%;
+    background-color: #99e2d0;
+    width: 7%;
+    border-radius: 0px 15px 15px 0px;
   }
   100% {
-    opacity: 0;
-    width: 0%;
+    opacity: 1;
+    background-color: #99e2d0;
+    width: 3%;
+    border-radius: 0px 15px 15px 0px;
   }
 }
 @keyframes RotateHeart {
   0% {
+    opacity: 1;
     transform: rotate(90deg);
   }
+  25% {
+    opacity: 1;
+    transform: rotate(180deg);
+  }
   50% {
+    opacity: 1;
+    transform: rotate(360deg);
+  }
+  75% {
+    opacity: 1;
     transform: rotate(180deg);
   }
   100% {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: rotate(90deg);
   }
 }
 /* MIXINS */
@@ -1025,7 +1046,7 @@ a {
   align-items: flex-start;
   justify-content: space-between;
   align-content: center;
-  width: 85%;
+  width: 100%;
   padding: 10px;
 }
 #Menucard .Menucard__TxtPart--title {
@@ -1044,7 +1065,7 @@ a {
 }
 .Menucard__platprix .Menucard__platprix--Plat {
   font-size: 14px;
-  width: 85%;
+  width: 80%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1057,17 +1078,15 @@ a {
 }
 
 #Menucard__IconPart {
+  opacity: 0;
   height: 67px;
-  background-color: #99e2d0;
-  width: 15%;
-  border-radius: 0px 15px 15px 0px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  opacity: 0;
   align-items: center;
 }
 #Menucard__IconPart .Menucard__IconPart--check {
+  opacity: 0;
   font-size: 28px;
   color: #fff;
 }
