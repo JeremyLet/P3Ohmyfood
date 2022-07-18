@@ -1,3 +1,5 @@
+/* EFFET HOVER DES BOUTONS */
+
 .filterbutton:hover {
 	background-color: lighten($second-color, 20%);
 	cursor: pointer;
@@ -5,6 +7,17 @@
 		color: $first-color;
 	}
 }
+
+.form__result-button:hover {
+	background: linear-gradient(
+		to top,
+		lighten($first-color, 10%),
+		lighten($second-color, 10%)
+	);
+	cursor: pointer;
+}
+
+/* CURSOR POINTER */
 
 .HomeCards {
 	cursor: pointer;

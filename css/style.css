@@ -359,6 +359,7 @@ a {
 }
 
 /* MIXINS */
+/* EFFET HOVER DES BOUTONS */
 .filterbutton:hover {
   background-color: #ffdff6;
   cursor: pointer;
@@ -367,6 +368,12 @@ a {
   color: #9356dc;
 }
 
+.form__result-button:hover {
+  background: linear-gradient(to top, #ae80e5, #fface7);
+  cursor: pointer;
+}
+
+/* CURSOR POINTER */
 .HomeCards {
   cursor: pointer;
 }
@@ -911,28 +918,38 @@ path:hover {
     width: 47%;
   }
 }
-.HomeCard .HomeCard__button--new {
-  display: none;
-  background-color: #99e2d0;
-  color: #008766;
-  font-size: 14px;
-  font-weight: 600;
+.HomeCard .HomeCard__buttonNEW--ON {
+  position: absolute;
+  z-index: 9999;
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.HomeCard .HomeCard__buttonNEW--ON .HomeCard__buttonNEW--ONTXT {
   border: 0px solid;
   height: 30px;
   width: 80px;
   padding: 7px 11px;
-  margin: 15px 0px 50px 240px;
-  position: absolute;
-  z-index: 9999;
+  margin: 15px;
+  background-color: #99e2d0;
+  color: #008766;
+  font-size: 14px;
+  font-weight: 600;
 }
-.HomeCard .HomeCard__picture {
+.HomeCard .HomeCard__buttonNEW--OFF {
+  display: none;
+}
+
+.HomeCard__picture {
   width: 100%;
   height: 70%;
   object-fit: cover;
   border-radius: 15px 15px 0px 0px;
   z-index: -1;
 }
-.HomeCard .HomeCard__descriptionBloc {
+
+.HomeCard__descriptionBloc {
   background-color: #fff;
   width: 100%;
   height: 30%;
@@ -944,19 +961,19 @@ path:hover {
   align-items: center;
   color: #000;
 }
-.HomeCard .HomeCard__descriptionBloc .HomeCard__description {
+.HomeCard__descriptionBloc .HomeCard__description {
   padding-top: 5px;
 }
-.HomeCard .HomeCard__descriptionBloc .HomeCard__description--Name {
+.HomeCard__descriptionBloc .HomeCard__description--Name {
   margin: 0px;
   padding-bottom: 5px;
   color: #000;
 }
-.HomeCard .HomeCard__descriptionBloc .HomeCard__description--Town {
+.HomeCard__descriptionBloc .HomeCard__description--Town {
   margin: 0px;
   color: #000;
 }
-.HomeCard .HomeCard__descriptionBloc .HomeCard__description--regularHeart {
+.HomeCard__descriptionBloc .HomeCard__description--regularHeart {
   font-size: 24px;
 }
 
