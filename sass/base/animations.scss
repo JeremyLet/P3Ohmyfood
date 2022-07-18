@@ -92,43 +92,15 @@
 
 /* EFFET COEUR */
 
-.HomeCard__description--regularHeart:active {
-	@include AnimationHeartTrigger;
+path {
+	fill-opacity: 0;
+	stroke-opacity: 1;
 }
 
-@media all and (min-width: 375px) {
-	.HomeCard__description--regularHeart:hover {
-		@include AnimationHeartTrigger;
-	}
-}
-
-@keyframes HeartFull {
-	0% {
-		font-family: "Font Awesome 6 Free";
-		font-weight: 900;
-		content: "\f004";
-		color: white;
-	}
-	1% {
-		@include AnimationHeartDescription;
-		opacity: 0.33;
-	}
-	25% {
-		@include AnimationHeartDescription;
-		opacity: 0.5;
-	}
-	50% {
-		@include AnimationHeartDescription;
-		opacity: 0.66;
-	}
-	75% {
-		@include AnimationHeartDescription;
-		opacity: 0.75;
-	}
-	100% {
-		@include AnimationHeartDescription;
-		opacity: 1;
-	}
+path:hover {
+	fill-opacity: 1;
+	stroke-opacity: 0;
+	transition-duration: 3s;
 }
 
 /* ANIMATION APPARATION MENUS */

@@ -358,6 +358,7 @@ a {
   font-weight: 600;
 }
 
+/* MIXINS */
 .filterbutton:hover {
   background-color: #ffdff6;
   cursor: pointer;
@@ -448,85 +449,17 @@ a {
 }
 
 /* EFFET COEUR */
-.HomeCard__description--regularHeart:active {
-  animation-name: HeartFull;
-  animation-duration: 3s;
-  animation-iteration-count: 1;
-  animation-delay: 0s;
-  animation-play-state: running;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
+path {
+  fill-opacity: 0;
+  stroke-opacity: 1;
 }
 
-@media all and (min-width: 375px) {
-  .HomeCard__description--regularHeart:hover {
-    animation-name: HeartFull;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    animation-delay: 0s;
-    animation-play-state: running;
-    animation-direction: normal;
-    animation-fill-mode: forwards;
-  }
+path:hover {
+  fill-opacity: 1;
+  stroke-opacity: 0;
+  transition-duration: 3s;
 }
-@keyframes HeartFull {
-  0% {
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    content: "\f004";
-    color: white;
-  }
-  1% {
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    content: "\f004";
-    background: -webkit-linear-gradient(top right, #9356dc 20%, #ff79d9 80%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    opacity: 0.33;
-  }
-  25% {
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    content: "\f004";
-    background: -webkit-linear-gradient(top right, #9356dc 20%, #ff79d9 80%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    opacity: 0.5;
-  }
-  50% {
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    content: "\f004";
-    background: -webkit-linear-gradient(top right, #9356dc 20%, #ff79d9 80%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    opacity: 0.66;
-  }
-  75% {
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    content: "\f004";
-    background: -webkit-linear-gradient(top right, #9356dc 20%, #ff79d9 80%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    opacity: 0.75;
-  }
-  100% {
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    content: "\f004";
-    background: -webkit-linear-gradient(top right, #9356dc 20%, #ff79d9 80%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    opacity: 1;
-  }
-}
+
 /* ANIMATION APPARATION MENUS */
 @keyframes LoadingMenus {
   0% {
@@ -629,7 +562,6 @@ a {
     transform: rotate(90deg);
   }
 }
-/* MIXINS */
 .filters {
   height: 350px;
   padding: 0px 20px;

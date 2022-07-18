@@ -7,30 +7,6 @@
 	padding-bottom: 5px;
 }
 
-@mixin AnimationHeartTrigger {
-	animation-name: HeartFull;
-	animation-duration: 3s;
-	animation-iteration-count: 1;
-	animation-delay: 0s;
-	animation-play-state: running;
-	animation-direction: normal;
-	animation-fill-mode: forwards;
-}
-
-@mixin AnimationHeartDescription {
-	font-family: "Font Awesome 6 Free";
-	font-weight: 900;
-	content: "\f004";
-	background: -webkit-linear-gradient(
-		top right,
-		$first-color 20%,
-		$second-color 80%
-	);
-	background-clip: text;
-	-webkit-background-clip: text;
-	color: transparent;
-}
-
 @mixin layoutblocsmenus {
 	width: 100%;
 	height: 30%;
