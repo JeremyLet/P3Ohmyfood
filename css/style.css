@@ -379,6 +379,24 @@ a {
 }
 
 /*LOADING SPINNER */
+@keyframes CouvertsTournants {
+  0% {
+    transform: rotateY(0deg);
+  }
+  33% {
+    transform: rotateY(60deg);
+  }
+  66% {
+    transform: rotateY(120deg);
+  }
+  100% {
+    transform: rotateY(180deg);
+  }
+}
+.effet--icons {
+  animation: CouvertsTournants 3s linear infinite forwards;
+}
+
 .effet--word1 {
   animation: color-animation 3s linear 1 forwards;
 }
