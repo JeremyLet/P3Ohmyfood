@@ -79,6 +79,7 @@
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+	opacity: 0;
 	.Menucard__TxtPart {
 		display: flex;
 		flex-direction: column;
@@ -116,8 +117,11 @@
 	}
 }
 .Menucard__IconPart {
-	opacity: 0;
+	opacity: 1;
 	height: 67px;
+	width: 0%;
+	background-color: $background-alt-6;
+	border-radius: 0px 15px 15px 0px;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
