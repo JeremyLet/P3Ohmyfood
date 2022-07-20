@@ -1,6 +1,7 @@
 .form__result-button {
 	height: 50px;
 	width: 220px;
+	margin-bottom: auto;
 	@include tablet {
 		transform: scale(1.3);
 	}
