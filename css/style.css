@@ -690,7 +690,7 @@ a {
 @media screen and (min-width: 992px) {
   .filterbutton {
     width: 30%;
-    margin: 20px;
+    margin: 10px;
   }
 }
 .filterbutton .filterbutton__circleicon {
