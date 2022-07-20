@@ -444,7 +444,6 @@ a {
   .BlocMenu {
     flex-direction: row;
     align-items: flex-start;
-    height: 650px;
   }
 }
 .BlocMenu .BlocMenu__title {
@@ -673,6 +672,7 @@ a {
   .form__result-button {
     align-self: flex-end;
     margin: 0 auto;
+    margin-top: 50px;
   }
 }
 
