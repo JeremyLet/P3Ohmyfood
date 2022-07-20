@@ -376,6 +376,8 @@ a {
 @media screen and (min-width: 992px) {
   .filters {
     height: 200px;
+    flex-direction: row;
+    justify-content: center;
   }
 }
 
@@ -590,6 +592,7 @@ a {
 @media screen and (min-width: 768px) {
   .form__resultspresentation .form__first-slogan {
     font-size: 28px;
+    width: 100%;
   }
 }
 .form__resultspresentation .form__second-slogan {
@@ -618,10 +621,21 @@ a {
   padding-top: 5px;
   padding-bottom: 10px;
 }
+@media screen and (min-width: 768px) {
+  .footer .footer__title {
+    text-align: center;
+    font-size: 24px;
+  }
+}
 .footer .footer__list {
   list-style-type: none;
   padding: 0px;
   margin: 0px;
+}
+@media screen and (min-width: 768px) {
+  .footer .footer__list {
+    text-align: center;
+  }
 }
 .footer .footer__list-subelement {
   padding-top: 8px;
@@ -670,6 +684,7 @@ a {
 @media screen and (min-width: 992px) {
   .filterbutton {
     width: 30%;
+    margin: 20px;
   }
 }
 .filterbutton .filterbutton__circleicon {
@@ -696,6 +711,11 @@ a {
 @media screen and (min-width: 768px) {
   .filterbutton .filterbutton__text {
     font-size: 24px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .filterbutton .filterbutton__text {
+    font-size: 18px;
   }
 }
 
@@ -922,7 +942,7 @@ a {
 .form,
 .partie-filtres,
 .partie-restaurants,
-.footer--home {
+.footer {
   animation-name: opacity;
   animation-duration: 3s;
   animation-iteration-count: 1;

@@ -12,11 +12,18 @@
 		margin: 0px;
 		padding-top: 5px;
 		padding-bottom: 10px;
+		@include tablet {
+			text-align: center;
+			font-size: $font-size-XL;
+		}
 	}
 	.footer__list {
 		list-style-type: none;
 		padding: 0px;
 		margin: 0px;
+		@include tablet {
+			text-align: center;
+		}
 		&-subelement {
 			padding-top: 8px;
 			&--icon {
