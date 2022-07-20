@@ -80,6 +80,7 @@
 	justify-content: space-between;
 	align-items: center;
 	opacity: 0;
+	cursor: pointer;
 	.Menucard__TxtPart {
 		display: flex;
 		flex-direction: column;
@@ -100,7 +101,7 @@
 	width: 100%;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 	.Menucard__platprix--Plat {
 		font-size: $font-size-S;
@@ -117,10 +118,11 @@
 	}
 }
 .Menucard__IconPart {
-	opacity: 1;
 	height: 67px;
+
 	width: 0%;
 	background-color: $background-alt-6;
+	margin-left: 5px;
 	border-radius: 0px 15px 15px 0px;
 	display: flex;
 	flex-direction: row;
