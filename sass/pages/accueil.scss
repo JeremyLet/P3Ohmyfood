@@ -3,7 +3,7 @@
 	padding: 0px 20px;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 	flex-wrap: wrap;
 
@@ -15,7 +15,7 @@
 .filters__title {
 	margin: 0%;
 	align-self: flex-start;
-	padding: 0px 0px 25px 15px;
+	padding: 0px 0px 20px 15px;
 }
 
 .effetLoadingSpinner {
@@ -32,14 +32,13 @@
 
 .partie-restaurants {
 	background-color: $background-alt-3;
+	padding: 15px 15px 45px 15px;
 	.HomeCards__title {
-		padding-top: 40px;
-		padding-bottom: 22px;
+		padding: 40px 0px 20px 5px;
 		margin: 0px;
 	}
 	.HomeCards {
 		background-color: $background-alt-3;
-		padding: 15px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;

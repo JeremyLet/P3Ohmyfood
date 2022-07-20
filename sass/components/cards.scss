@@ -4,7 +4,7 @@
 	@include desktop {
 		width: 47%;
 	}
-	margin: 10px;
+
 	box-shadow: 4px 4px 8px $background-alt-4;
 	border-radius: 15px;
 	margin-bottom: 20px;
@@ -12,7 +12,7 @@
 		&--ON {
 			position: absolute;
 			z-index: 9999;
-			width: 95%;
+			width: 92%;
 			display: flex;
 			flex-direction: row;
 			justify-content: flex-end;
@@ -52,7 +52,6 @@
 	align-items: center;
 	color: $font-color-2;
 	.HomeCard__description {
-		padding-top: 5px;
 		&--Name {
 			margin: 0px;
 			padding-bottom: 5px;

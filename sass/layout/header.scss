@@ -1,10 +1,11 @@
 .headerHome {
-	height: 60px;
+	height: 65px;
 	&__title {
-		padding-top: 10px;
+		padding-top: 20px;
 		font-family: $font-logoTitres;
 		font-size: $font-size-XXL;
 		text-align: center;
+		margin: 0;
 		@include tablet {
 			font-size: calc($font-size-XXL * 1.5);
 		}
@@ -12,7 +13,7 @@
 }
 
 .headerMenu {
-	height: 60px;
+	height: 65px;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
