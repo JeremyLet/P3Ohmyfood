@@ -956,32 +956,53 @@ a {
   animation-play-state: running;
 }
 
-/* ANIMATION CHECK PAGES MENUS */
-/* FOND */
+/* TRANSITIONS */
 .Menucard__IconPart {
   transition-property: width;
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
 }
 
-.Menucard:hover .Menucard__IconPart {
-  width: 15%;
-  opacity: 1;
-}
-
-/* ROTATE */
 .Menucard__IconPart--check {
   transition: 0.5s;
   transition-delay: 0ms;
   transition-timing-function: linear;
 }
 
-.Menucard:hover .Menucard__IconPart--check {
-  cursor: pointer;
-  opacity: 1;
-  transform: rotate(360deg);
+/* RESPONSIVE */
+@media screen and (max-width: 599px) {
+  .Menucard:active .Menucard__IconPart {
+    width: 15%;
+    opacity: 1;
+  }
+  .Menucard:active .Menucard__IconPart--check {
+    cursor: pointer;
+    opacity: 1;
+    transform: rotate(360deg);
+  }
 }
-
+@media screen and (min-width: 768px) {
+  .Menucard:active .Menucard__IconPart {
+    width: 15%;
+    opacity: 1;
+  }
+  .Menucard:active .Menucard__IconPart--check {
+    cursor: pointer;
+    opacity: 1;
+    transform: rotate(360deg);
+  }
+}
+@media screen and (min-width: 992px) {
+  .Menucard:hover .Menucard__IconPart {
+    width: 15%;
+    opacity: 1;
+  }
+  .Menucard:hover .Menucard__IconPart--check {
+    cursor: pointer;
+    opacity: 1;
+    transform: rotate(360deg);
+  }
+}
 /*.Menucard:hover .Menucard__IconPart--check {
 	animation: RotateCheck 2s 1 linear;
 }
