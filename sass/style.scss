@@ -2,14 +2,17 @@
 @import "./base/normalize";
 @import "./base/typography";
 @import "./base/breakpoints";
-@import "./base/animations";
 @import "./pages/accueil";
 @import "./pages/menus";
 @import "./layout/header";
-@import "./layout/searchbar";
 @import "./layout/footer";
 @import "./components/buttons";
 @import "./components/cards";
+@import "./components/loadingspinner";
+@import "./components/check";
+@import "./components/apparition";
+@import "./components/hovers";
+@import "./components/coeur";
 
 html {
 	box-sizing: border-box;
