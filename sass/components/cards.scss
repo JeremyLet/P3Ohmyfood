@@ -69,7 +69,7 @@
 
 .Menucard {
 	width: 100%;
-	height: 67px;
+	height: 70px;
 	margin-top: 15px;
 	background-color: $background-alt-1;
 	border-radius: 15px;
@@ -78,47 +78,53 @@
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	opacity: 0;
 	cursor: pointer;
-	.Menucard__plat {
+	&__plat {
+		width: 85%;
+		height: 100%;
+		padding: 10px 0px 10px 5px;
 		display: flex;
 		flex-direction: column;
-		align-items: flex-start;
-		justify-content: space-between;
-		align-content: center;
-		width: 100%;
-		padding: 10px;
-		font-size: $font-size-S;
-		white-space: nowrap;
-		overflow: hidden;
-		text-overflow: ellipsis;
+		justify-content: center;
+		align-items: center;
+
 		&--title {
-			font-size: $font-size-M;
+			width: 100%;
+			height: 50%;
+			font-size: $font-size-L;
 			font-weight: $font-weight-large;
-			padding-top: 4px;
-			padding-bottom: 6px;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
 		}
 		&--details {
+			width: 100%;
+			height: 50%;
 			font-size: $font-size-M;
 			font-weight: $font-weight-medium;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
 		}
 	}
-	.Menucard__prix {
+	&__prix {
+		padding: 0px 10px 15px 10px;
+		width: 17%;
 		font-size: $font-size-M;
 		font-weight: $font-weight-large;
 		margin-top: auto;
-		padding-bottom: 10px;
 	}
-	.Menucard__check {
-		height: 67px;
-		width: 15%;
+	&__check {
+		height: 70px;
+		width: 17%;
 		background-color: $background-alt-6;
-		margin-left: 5px;
 		border-radius: 0px 15px 15px 0px;
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
+		margin-right: -60px;
+		opacity: 0;
 		&--icon {
 			font-size: $font-size-XXL;
 			color: $font-color-1;
