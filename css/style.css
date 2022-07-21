@@ -803,7 +803,7 @@ a {
   opacity: 0;
   cursor: pointer;
 }
-.Menucard .Menucard__TxtPart {
+.Menucard .Menucard__plat {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -811,38 +811,30 @@ a {
   align-content: center;
   width: 100%;
   padding: 10px;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.Menucard .Menucard__TxtPart--title {
+.Menucard .Menucard__plat--title {
   font-size: 16px;
   font-weight: 600;
   padding-top: 4px;
   padding-bottom: 6px;
 }
-
-.Menucard__platprix {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+.Menucard .Menucard__plat--details {
+  font-size: 16px;
+  font-weight: 400;
 }
-.Menucard__platprix .Menucard__platprix--Plat {
-  font-size: 14px;
-  width: 80%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.Menucard__platprix .Menucard__platprix--Prix {
-  width: 20%;
+.Menucard .Menucard__prix {
   font-size: 16px;
   font-weight: 600;
-  text-align: right;
+  margin-top: auto;
+  padding-bottom: 10px;
 }
-
-.Menucard__IconPart {
+.Menucard .Menucard__check {
   height: 67px;
-  width: 0%;
+  width: 15%;
   background-color: #99e2d0;
   margin-left: 5px;
   border-radius: 0px 15px 15px 0px;
@@ -851,8 +843,7 @@ a {
   justify-content: center;
   align-items: center;
 }
-.Menucard__IconPart .Menucard__IconPart--check {
-  opacity: 0;
+.Menucard .Menucard__check--icon {
   font-size: 28px;
   color: #fff;
 }
@@ -966,39 +957,17 @@ a {
 }
 
 /* RESPONSIVE */
-@media screen and (max-width: 599px) {
-  .Menucard:active .Menucard__IconPart {
-    width: 15%;
-    opacity: 1;
-  }
-  .Menucard:active .Menucard__IconPart--check {
-    cursor: pointer;
-    opacity: 1;
-    transform: rotate(360deg);
-  }
+.Menucard:hover .Menucard__IconPart {
+  width: 15%;
+  opacity: 1;
 }
-@media screen and (min-width: 768px) {
-  .Menucard:active .Menucard__IconPart {
-    width: 15%;
-    opacity: 1;
-  }
-  .Menucard:active .Menucard__IconPart--check {
-    cursor: pointer;
-    opacity: 1;
-    transform: rotate(360deg);
-  }
+
+.Menucard:hover .Menucard__IconPart--check {
+  cursor: pointer;
+  opacity: 1;
+  transform: rotate(360deg);
 }
-@media screen and (min-width: 992px) {
-  .Menucard:hover .Menucard__IconPart {
-    width: 15%;
-    opacity: 1;
-  }
-  .Menucard:hover .Menucard__IconPart--check {
-    cursor: pointer;
-    opacity: 1;
-    transform: rotate(360deg);
-  }
-}
+
 /*.Menucard:hover .Menucard__IconPart--check {
 	animation: RotateCheck 2s 1 linear;
 }
@@ -1050,104 +1019,75 @@ a {
 }*/
 /* ANIMATION APPARATION MENUS */
 .Menucard-1 {
-  animation-name: Apparition;
-  animation-duration: 5s;
-  animation-iteration-count: 1;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-  animation-delay: 1s;
+  transition: all 3s linear;
+  transform: translate(-20px);
+  opacity: 1;
+  transition-delay: 1s;
 }
 
 .Menucard-2 {
-  animation-name: Apparition;
-  animation-duration: 5s;
-  animation-iteration-count: 1;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-  animation-delay: 2s;
+  transition: all 3s linear;
+  transform: translate(-20px);
+  opacity: 1;
+  transition-delay: 2s;
 }
 
 .Menucard-3 {
-  animation-name: Apparition;
-  animation-duration: 5s;
-  animation-iteration-count: 1;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-  animation-delay: 3s;
+  transition: all 3s linear;
+  transform: translate(-20px);
+  opacity: 1;
+  transition-delay: 3s;
 }
 
 .Menucard-4 {
-  animation-name: Apparition;
-  animation-duration: 5s;
-  animation-iteration-count: 1;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-  animation-delay: 4s;
+  transition: all 3s linear;
+  transform: translate(-20px);
+  opacity: 1;
+  transition-delay: 4s;
 }
 
 .Menucard-5 {
-  animation-name: Apparition;
-  animation-duration: 5s;
-  animation-iteration-count: 1;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-  animation-delay: 5s;
+  transition: all 3s linear;
+  transform: translate(-20px);
+  opacity: 1;
+  transition-delay: 5s;
 }
 
 .Menucard-6 {
-  animation-name: Apparition;
-  animation-duration: 5s;
-  animation-iteration-count: 1;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-  animation-delay: 6s;
+  transition: all 3s linear;
+  transform: translate(-20px);
+  opacity: 1;
+  transition-delay: 6s;
 }
 
 .Menucard-7 {
-  animation-name: Apparition;
-  animation-duration: 5s;
-  animation-iteration-count: 1;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-  animation-delay: 7s;
+  transition: all 3s linear;
+  transform: translate(-20px);
+  opacity: 1;
+  transition-delay: 7s;
 }
 
 .Menucard-8 {
-  animation-name: Apparition;
-  animation-duration: 5s;
-  animation-iteration-count: 1;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-  animation-delay: 8s;
+  transition: all 3s linear;
+  transform: translate(-20px);
+  opacity: 1;
+  transition-delay: 8s;
 }
 
 .Menucard-9 {
-  animation-name: Apparition;
-  animation-duration: 5s;
-  animation-iteration-count: 1;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-  animation-delay: 9s;
+  transition: all 3s linear;
+  transform: translate(-20px);
+  opacity: 1;
+  transition-delay: 9s;
 }
 
 .Menucard-10 {
-  animation-name: Apparition;
-  animation-duration: 5s;
-  animation-iteration-count: 1;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-  animation-delay: 10s;
+  transition: all 3s linear;
+  transform: translate(-20px);
+  opacity: 1;
+  transition-delay: 10s;
 }
 
-@keyframes Apparition {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(-20px);
-  }
-}
 /* EFFET HOVER DES BOUTONS */
 .filterbutton:hover {
   background-color: #ffdff6;

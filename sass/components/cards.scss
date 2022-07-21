@@ -80,7 +80,7 @@
 	align-items: center;
 	opacity: 0;
 	cursor: pointer;
-	.Menucard__TxtPart {
+	.Menucard__plat {
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
@@ -88,48 +88,40 @@
 		align-content: center;
 		width: 100%;
 		padding: 10px;
-	}
-	.Menucard__TxtPart--title {
-		font-size: $font-size-M;
-		font-weight: $font-weight-large;
-		padding-top: 4px;
-		padding-bottom: 6px;
-	}
-}
-.Menucard__platprix {
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	.Menucard__platprix--Plat {
 		font-size: $font-size-S;
-		width: 80%;
 		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;
+		&--title {
+			font-size: $font-size-M;
+			font-weight: $font-weight-large;
+			padding-top: 4px;
+			padding-bottom: 6px;
+		}
+		&--details {
+			font-size: $font-size-M;
+			font-weight: $font-weight-medium;
+		}
 	}
-	.Menucard__platprix--Prix {
-		width: 20%;
+	.Menucard__prix {
 		font-size: $font-size-M;
 		font-weight: $font-weight-large;
-		text-align: right;
+		margin-top: auto;
+		padding-bottom: 10px;
 	}
-}
-.Menucard__IconPart {
-	height: 67px;
-
-	width: 0%;
-	background-color: $background-alt-6;
-	margin-left: 5px;
-	border-radius: 0px 15px 15px 0px;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	.Menucard__IconPart--check {
-		opacity: 0;
-		font-size: $font-size-XXL;
-		color: $font-color-1;
+	.Menucard__check {
+		height: 67px;
+		width: 15%;
+		background-color: $background-alt-6;
+		margin-left: 5px;
+		border-radius: 0px 15px 15px 0px;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		&--icon {
+			font-size: $font-size-XXL;
+			color: $font-color-1;
+		}
 	}
 }
