@@ -1141,20 +1141,11 @@ a {
 
 @keyframes Apparition {
   0% {
-    opacity: 1;
-  }
-  25% {
     opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-  50% {
-    transform: translateY(-10px);
   }
   100% {
     opacity: 1;
-    transform: translateY(-10px);
+    transform: translateY(-20px);
   }
 }
 /* EFFET HOVER DES BOUTONS */

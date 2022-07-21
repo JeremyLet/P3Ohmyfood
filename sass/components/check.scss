@@ -14,40 +14,14 @@
 
 /* RESPONSIVE */
 
-@include mobile {
-	.Menucard:active .Menucard__IconPart {
-		width: 15%;
-		opacity: 1;
-	}
-	.Menucard:active .Menucard__IconPart--check {
-		cursor: pointer;
-		opacity: 1;
-		transform: rotate(360deg);
-	}
+.Menucard:hover .Menucard__IconPart {
+	width: 15%;
+	opacity: 1;
 }
-
-@include tablet {
-	.Menucard:active .Menucard__IconPart {
-		width: 15%;
-		opacity: 1;
-	}
-	.Menucard:active .Menucard__IconPart--check {
-		cursor: pointer;
-		opacity: 1;
-		transform: rotate(360deg);
-	}
-}
-
-@include desktop {
-	.Menucard:hover .Menucard__IconPart {
-		width: 15%;
-		opacity: 1;
-	}
-	.Menucard:hover .Menucard__IconPart--check {
-		cursor: pointer;
-		opacity: 1;
-		transform: rotate(360deg);
-	}
+.Menucard:hover .Menucard__IconPart--check {
+	cursor: pointer;
+	opacity: 1;
+	transform: rotate(360deg);
 }
 
 /*.Menucard:hover .Menucard__IconPart--check {
