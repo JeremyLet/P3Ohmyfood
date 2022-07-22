@@ -111,6 +111,9 @@
 	}
 	&__prix {
 		width: 20%;
+		@include desktop {
+			width: 35%;
+		}
 		padding: 15px 20px;
 		font-size: $font-size-M;
 		font-weight: $font-weight-large;
@@ -127,6 +130,12 @@
 		justify-content: center;
 		align-items: center;
 		margin-right: -60px;
+		@include tablet {
+			margin-right: -140px;
+		}
+		@include desktop {
+			margin-right: -70px;
+		}
 
 		&--icon {
 			font-size: $font-size-XXL;

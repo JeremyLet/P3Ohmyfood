@@ -14,6 +14,12 @@
 .Menucard:hover .Menucard__check {
 	transition-property: transform;
 	transform: translateX(-60px);
+	@include tablet {
+		transform: translateX(-140px);
+	}
+	@include desktop {
+		transform: translateX(-70px);
+	}
 	transition: all 1s linear;
 }
 

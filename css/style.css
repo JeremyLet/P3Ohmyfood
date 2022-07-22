@@ -843,6 +843,11 @@ a {
   margin-top: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 992px) {
+  .Menucard__prix {
+    width: 35%;
+  }
+}
 .Menucard__check {
   height: 67px;
   width: 17%;
@@ -853,6 +858,16 @@ a {
   justify-content: center;
   align-items: center;
   margin-right: -60px;
+}
+@media screen and (min-width: 768px) {
+  .Menucard__check {
+    margin-right: -140px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .Menucard__check {
+    margin-right: -70px;
+  }
 }
 .Menucard__check--icon {
   font-size: 28px;
@@ -969,6 +984,16 @@ a {
   transition-property: transform;
   transform: translateX(-60px);
   transition: all 1s linear;
+}
+@media screen and (min-width: 768px) {
+  .Menucard:hover .Menucard__check {
+    transform: translateX(-140px);
+  }
+}
+@media screen and (min-width: 992px) {
+  .Menucard:hover .Menucard__check {
+    transform: translateX(-70px);
+  }
 }
 
 /* ROTATE */
