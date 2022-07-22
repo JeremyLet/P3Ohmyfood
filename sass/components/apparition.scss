@@ -2,15 +2,18 @@
 
 @for $i from 1 through 10 {
 	.Menucard-#{$i} {
-		opacity: 0;
-		transition-property: all;
-		transition-duration: 3s;
-		transition-timing-function: linear;
-		transition-delay: 1s * $i;
+		// opacity: 0;
+		animation: Apparition 3s 1 linear forwards;
+		animation-delay: 1s * $i;
 	}
 }
 
-body:hover .Menucard {
-	opacity: 1;
-	transform: translateY(-20px);
+@keyframes Apparition {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(-20px);
+	}
 }

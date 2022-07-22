@@ -69,7 +69,7 @@
 
 .Menucard {
 	width: 100%;
-	height: 70px;
+	height: 67px;
 	margin-top: 15px;
 	background-color: $background-alt-1;
 	border-radius: 15px;
@@ -78,22 +78,24 @@
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+	overflow: hidden;
+	position: relative;
 	cursor: pointer;
 	&__plat {
-		width: 85%;
+		width: 100%;
 		height: 100%;
-		padding: 10px 0px 10px 5px;
+		padding: 10px 0px 10px 10px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-
+		overflow: hidden;
+		white-space: nowrap;
 		&--title {
 			width: 100%;
 			height: 50%;
 			font-size: $font-size-L;
 			font-weight: $font-weight-large;
-			white-space: nowrap;
 			overflow: hidden;
 			text-overflow: ellipsis;
 		}
@@ -108,14 +110,15 @@
 		}
 	}
 	&__prix {
-		padding: 0px 10px 15px 10px;
-		width: 17%;
+		width: 20%;
+		padding: 15px 20px;
 		font-size: $font-size-M;
 		font-weight: $font-weight-large;
 		margin-top: auto;
+		margin-right: auto;
 	}
 	&__check {
-		height: 70px;
+		height: 67px;
 		width: 17%;
 		background-color: $background-alt-6;
 		border-radius: 0px 15px 15px 0px;
@@ -124,7 +127,7 @@
 		justify-content: center;
 		align-items: center;
 		margin-right: -60px;
-		opacity: 0;
+
 		&--icon {
 			font-size: $font-size-XXL;
 			color: $font-color-1;
