@@ -74,23 +74,20 @@
 	background-color: $background-alt-1;
 	border-radius: 15px;
 	box-shadow: 4px 4px 4px $background-alt-4;
+	padding: 10px 0px 10px 10px;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
 	align-items: center;
 	overflow: hidden;
-	position: relative;
 	cursor: pointer;
 	&__plat {
-		width: 100%;
+		width: 85%;
 		height: 100%;
-		padding: 10px 0px 10px 10px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		overflow: hidden;
-		white-space: nowrap;
+		margin-right: auto;
 		&--title {
 			width: 100%;
 			height: 50%;
@@ -110,19 +107,15 @@
 		}
 	}
 	&__prix {
-		width: 20%;
-		@include desktop {
-			width: 35%;
-		}
-		padding: 15px 20px;
+		margin-top: auto;
+		padding-bottom: 5px;
+		padding-right: 10px;
 		font-size: $font-size-M;
 		font-weight: $font-weight-large;
-		margin-top: auto;
-		margin-right: auto;
 	}
 	&__check {
 		height: 67px;
-		width: 17%;
+		width: 60px;
 		background-color: $background-alt-6;
 		border-radius: 0px 15px 15px 0px;
 		display: flex;
@@ -130,13 +123,6 @@
 		justify-content: center;
 		align-items: center;
 		margin-right: -60px;
-		@include tablet {
-			margin-right: -140px;
-		}
-		@include desktop {
-			margin-right: -70px;
-		}
-
 		&--icon {
 			font-size: $font-size-XXL;
 			color: $font-color-1;

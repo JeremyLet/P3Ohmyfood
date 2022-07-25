@@ -491,6 +491,7 @@ a {
   .BlocMenu {
     flex-direction: row;
     align-items: flex-start;
+    justify-content: center;
   }
 }
 .BlocMenu .BlocMenu__title {
@@ -799,24 +800,21 @@ a {
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 4px 4px 4px #cfcfcf;
+  padding: 10px 0px 10px 10px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
   overflow: hidden;
-  position: relative;
   cursor: pointer;
 }
 .Menucard__plat {
-  width: 100%;
+  width: 85%;
   height: 100%;
-  padding: 10px 0px 10px 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
-  white-space: nowrap;
+  margin-right: auto;
 }
 .Menucard__plat--title {
   width: 100%;
@@ -836,21 +834,15 @@ a {
   text-overflow: ellipsis;
 }
 .Menucard__prix {
-  width: 20%;
-  padding: 15px 20px;
+  margin-top: auto;
+  padding-bottom: 5px;
+  padding-right: 10px;
   font-size: 16px;
   font-weight: 600;
-  margin-top: auto;
-  margin-right: auto;
-}
-@media screen and (min-width: 992px) {
-  .Menucard__prix {
-    width: 35%;
-  }
 }
 .Menucard__check {
   height: 67px;
-  width: 17%;
+  width: 60px;
   background-color: #99e2d0;
   border-radius: 0px 15px 15px 0px;
   display: flex;
@@ -858,16 +850,6 @@ a {
   justify-content: center;
   align-items: center;
   margin-right: -60px;
-}
-@media screen and (min-width: 768px) {
-  .Menucard__check {
-    margin-right: -140px;
-  }
-}
-@media screen and (min-width: 992px) {
-  .Menucard__check {
-    margin-right: -70px;
-  }
 }
 .Menucard__check--icon {
   font-size: 28px;
@@ -970,90 +952,115 @@ a {
 }
 
 /* BLOC PLAT */
-.Menucard:hover .Menucard__plat {
-  width: 66%;
-  transition: all 1s linear;
+.Menucard__plat {
+  transition: all 500ms ease-in;
 }
 
-/* TRANSLATE */
+.Menucard:hover .Menucard__plat {
+  width: calc(85% - 60px);
+  transition: all 500ms ease-in;
+}
+
+/* TRANSLATE du Check */
 .Menucard__check {
-  transition: all 1s;
+  transition: all 500ms ease-out;
 }
 
 .Menucard:hover .Menucard__check {
   transition-property: transform;
   transform: translateX(-60px);
-  transition: all 1s linear;
-}
-@media screen and (min-width: 768px) {
-  .Menucard:hover .Menucard__check {
-    transform: translateX(-140px);
-  }
-}
-@media screen and (min-width: 992px) {
-  .Menucard:hover .Menucard__check {
-    transform: translateX(-70px);
-  }
+  transition: all 500ms ease-in;
 }
 
-/* ROTATE */
+/* ROTATE du Check */
 .Menucard__check--icon {
   transition: all 0s;
 }
 
 .Menucard:hover .Menucard__check--icon {
-  transition: all 1s linear;
+  transition: all 500ms linear;
   transform: rotate(360deg);
 }
 
+/* Queries du Check pour version Tablet et Desktop */
+@media screen and (min-width: 768px) {
+  .Menucard__prix {
+    transition: all 500ms ease-out;
+  }
+  .Menucard:hover .Menucard__prix {
+    transition-property: transform;
+    transform: translateX(-60px);
+    transition: all 500ms ease-in;
+  }
+}
+@media screen and (min-width: 992px) {
+  .Menucard__prix {
+    transition: all 500ms ease-out;
+  }
+  .Menucard:hover .Menucard__prix {
+    transition-property: transform;
+    transform: translateX(-60px);
+    transition: all 500ms ease-in;
+  }
+}
 /* ANIMATION APPARATION MENUS */
 .Menucard-1 {
-  animation: Apparition 3s 1 linear forwards;
+  opacity: 0;
+  animation: Apparition 1.5s 1 linear forwards;
   animation-delay: 1s;
 }
 
 .Menucard-2 {
-  animation: Apparition 3s 1 linear forwards;
+  opacity: 0;
+  animation: Apparition 1.5s 1 linear forwards;
   animation-delay: 2s;
 }
 
 .Menucard-3 {
-  animation: Apparition 3s 1 linear forwards;
+  opacity: 0;
+  animation: Apparition 1.5s 1 linear forwards;
   animation-delay: 3s;
 }
 
 .Menucard-4 {
-  animation: Apparition 3s 1 linear forwards;
+  opacity: 0;
+  animation: Apparition 1.5s 1 linear forwards;
   animation-delay: 4s;
 }
 
 .Menucard-5 {
-  animation: Apparition 3s 1 linear forwards;
+  opacity: 0;
+  animation: Apparition 1.5s 1 linear forwards;
   animation-delay: 5s;
 }
 
 .Menucard-6 {
-  animation: Apparition 3s 1 linear forwards;
+  opacity: 0;
+  animation: Apparition 1.5s 1 linear forwards;
   animation-delay: 6s;
 }
 
 .Menucard-7 {
-  animation: Apparition 3s 1 linear forwards;
+  opacity: 0;
+  animation: Apparition 1.5s 1 linear forwards;
   animation-delay: 7s;
 }
 
 .Menucard-8 {
-  animation: Apparition 3s 1 linear forwards;
+  opacity: 0;
+  animation: Apparition 1.5s 1 linear forwards;
   animation-delay: 8s;
 }
 
 .Menucard-9 {
-  animation: Apparition 3s 1 linear forwards;
+  opacity: 0;
+  animation: Apparition 1.5s 1 linear forwards;
   animation-delay: 9s;
 }
 
 .Menucard-10 {
-  animation: Apparition 3s 1 linear forwards;
+  opacity: 0;
+  animation: Apparition 1.5s 1 linear forwards;
   animation-delay: 10s;
 }
 
