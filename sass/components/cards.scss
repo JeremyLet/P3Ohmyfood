@@ -93,6 +93,7 @@
 			height: 50%;
 			font-size: $font-size-L;
 			font-weight: $font-weight-large;
+			white-space: nowrap;
 			overflow: hidden;
 			text-overflow: ellipsis;
 		}
