@@ -9,6 +9,18 @@
 	transition: all 500ms ease-in;
 }
 
+/* BLOC PRIX */
+
+.Menucard__prix {
+	transition: all 500ms ease-out;
+}
+
+.Menucard:hover .Menucard__prix {
+	transition-property: transform;
+	transform: translateX(-60px);
+	transition: all 500ms ease-in;
+}
+
 /* TRANSLATE du Check */
 
 .Menucard__check {
@@ -30,13 +42,4 @@
 .Menucard:hover .Menucard__check--icon {
 	transition: all 500ms linear;
 	transform: rotate(360deg);
-}
-
-/* Queries du Check pour version Tablet et Desktop */
-
-@include tablet {
-	@include reductiontailleblocprix;
-}
-@include desktop {
-	@include reductiontailleblocprix;
 }
